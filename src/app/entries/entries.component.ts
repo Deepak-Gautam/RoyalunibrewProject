@@ -3,6 +3,7 @@ import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument 
 import {EntryLogs} from '../entrylogs';
 import { Router } from '@angular/router';
 import {map} from 'rxjs/operators';
+// import { Query } from '@firebase/firestore-types'
 
 @Component({
   selector: 'app-entries',
@@ -16,13 +17,13 @@ export class EntriesComponent implements OnInit {
   constructor(private afs: AngularFirestore, private router: Router) { }
 
   ngOnInit() {
-    this.entryCol = this.afs.collection('entrylogs');
+    this.entryCol = this.afs.collection('/entrylogs', ref => ref.orderBy('Name' , 'desc' ).limit(1));
     this.entries = this.entryCol.snapshotChanges().pipe(
     map(actions => {
       return actions.map( a => {
-        const data = a.payload.doc.data() as EntryLogs;
+        const data = a.payload.doc.data() as EntryLogs ;
         const id = a.payload.doc.id;
-        return{ id, data};
+        return{ id, data}  ;
       });
     })
     );
