@@ -14,6 +14,7 @@ import { SvgIconsComponent } from './svg-icons/svg-icons.component';
 import { FormsModule } from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
 import { EntriesComponent } from './entries/entries.component';
+// import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { EntriesComponent } from './entries/entries.component';
     HttpClientModule,
     AngularSvgIconModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // MatDatepickerModule, MatInputModule,MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

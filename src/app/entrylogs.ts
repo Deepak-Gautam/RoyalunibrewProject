@@ -1,3 +1,4 @@
+import { Timestamp } from 'rxjs/internal/operators/timestamp';
 
 export class EntryLogs {
 // id: number;
@@ -7,4 +8,6 @@ Name: string;
 CompanyName: string;
 Destination: string;
 DateTime: string;
+
+
 }
