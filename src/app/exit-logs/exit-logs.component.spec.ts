@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SvgIconsComponent } from './svg-icons.component';
+import { ExitLogsComponent } from './exit-logs.component';
 
-describe('SvgIconsComponent', () => {
-  let component: SvgIconsComponent;
-  let fixture: ComponentFixture<SvgIconsComponent>;
+describe('ExitLogsComponent', () => {
+  let component: ExitLogsComponent;
+  let fixture: ComponentFixture<ExitLogsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SvgIconsComponent ]
+      declarations: [ ExitLogsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SvgIconsComponent);
+    fixture = TestBed.createComponent(ExitLogsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

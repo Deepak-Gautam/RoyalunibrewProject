@@ -73,12 +73,12 @@ export class EntryLogsComponent implements OnInit {
         Name: this.entry.Name,
         CompanyName: this.entry.CompanyName,
         Destination: this.entry.Destination,
-        DateTime: this.entry.DateTime,
+        DateTime: this.entry.DateTime
       });
     }
     this.router.navigate(['/entries']);
   }
-  goBack(): void {
+  goBack() {
     this.location.back();
   }
 

@@ -10,18 +10,24 @@ import { FlagsComponent } from './flags/flags.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { EntryLogsComponent } from './entry-logs/entry-logs.component';
-import { SvgIconsComponent } from './svg-icons/svg-icons.component';
 import { FormsModule } from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
 import { EntriesComponent } from './entries/entries.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { InstructionsComponent } from './instructions/instructions.component';
+import { SelectionComponent } from './selection/selection.component';
+import { ExitLogsComponent } from './exit-logs/exit-logs.component';
 // import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
     FlagsComponent,
     EntryLogsComponent,
-    SvgIconsComponent,
-    EntriesComponent
+    EntriesComponent,
+    NavbarComponent,
+    InstructionsComponent,
+    SelectionComponent,
+    ExitLogsComponent
   ],
   imports: [
     BrowserModule,

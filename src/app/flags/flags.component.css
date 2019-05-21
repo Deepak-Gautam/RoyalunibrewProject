@@ -1,8 +1,6 @@
-
-img{
-    width: 70%;
-    margin-top:40%;
-}
-.container{
-    text-align: center;
+img{width: 70%;}
+.caption {
+    color: #154f3e;
+    font-size: 22px;
+    padding-top: 20px;
 }
