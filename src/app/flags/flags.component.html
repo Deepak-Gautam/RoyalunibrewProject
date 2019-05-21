@@ -1,10 +1,10 @@
-<section id="flags">
-<div class= "container">
-<div class= "row">
- <ul class="col-md-6" *ngFor="let flag of flags | async">
-  <a ><div class="media-object">
- <img src="{{ flag.imageUrl}}" routerLink="/add"> </div></a>
- <div>{{flag.name}}</div> 
-</ul>
-</div></div>
-</section>
+<div class="container">
+  <div class="row">
+    <div class="col-6 text-center" *ngFor="let flag of flags | async">
+      <a routerLink="/add">
+        <img src="{{flag.imageUrl}}" alt="Flags for Languages">
+        <h2 class="caption">{{flag.name}}</h2>
+      </a>
+    </div>
+  </div>
+</div>

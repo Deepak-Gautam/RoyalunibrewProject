@@ -1,0 +1,13 @@
+nav{
+    padding: 10px;
+}
+
+img {
+  width: 7rem;
+}
+
+@media (max-width: 998px) {
+  img {
+    width: 64px;
+  }
+}

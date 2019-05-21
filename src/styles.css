@@ -1,0 +1,32 @@
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background: #eee;
+    height: 100vh;
+    position: relative;
+}
+img{
+    width: 100%;
+}
+a:hover{
+    text-decoration: none;
+    color: #269e7b;
+}
+.row{
+    margin: 0;
+}
+.row-btn {
+    height: calc(100vh - 115px);
+}
+.nav-btn {
+    display: block;
+    width: 99.4px;
+    padding: 1.2rem;
+    color: #154f3e;
+    box-shadow: #aaaaaa 0px 4px 10px 2px;
+    border: 1px solid #cccccc;
+    background-color: #eeeeee;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
