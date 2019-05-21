@@ -17,7 +17,7 @@ export class EntriesComponent implements OnInit {
   constructor(private afs: AngularFirestore, private router: Router) { }
 
   ngOnInit() {
-    this.entryCol = this.afs.collection('/entrylogs', ref => ref.orderBy('Name' , 'desc' ).limit(1));
+    this.entryCol = this.afs.collection('/entrylogs', ref => ref.orderBy('Name' , 'desc' ));
     this.entries = this.entryCol.snapshotChanges().pipe(
     map(actions => {
       return actions.map( a => {
@@ -29,7 +29,6 @@ export class EntriesComponent implements OnInit {
     );
   }
   add() {
-    this.router.navigate(['add']);
+    this.router.navigate(['entry']);
   }
-
 }
