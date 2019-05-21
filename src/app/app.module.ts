@@ -14,6 +14,7 @@ import { SvgIconsComponent } from './svg-icons/svg-icons.component';
 import { FormsModule } from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
 import { EntriesComponent } from './entries/entries.component';
+import { QuizComponent } from './quiz/quiz.component';
 // import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EntriesComponent } from './entries/entries.component';
     FlagsComponent,
     EntryLogsComponent,
     SvgIconsComponent,
-    EntriesComponent
+    EntriesComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,
