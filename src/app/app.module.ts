@@ -15,6 +15,8 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { EntriesComponent } from './entries/entries.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { InstructionsComponent } from './instructions/instructions.component';
+import { SelectionComponent } from './selection/selection.component';
+import { ExitLogsComponent } from './exit-logs/exit-logs.component';
 // import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { InstructionsComponent } from './instructions/instructions.component';
     EntryLogsComponent,
     EntriesComponent,
     NavbarComponent,
-    InstructionsComponent
+    InstructionsComponent,
+    SelectionComponent,
+    ExitLogsComponent
   ],
   imports: [
     BrowserModule,
