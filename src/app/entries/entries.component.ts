@@ -3,7 +3,7 @@ import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument 
 import {EntryLogs} from '../entrylogs';
 import { Router } from '@angular/router';
 import {map} from 'rxjs/operators';
-// import { Query } from '@firebase/firestore-types'
+
 
 @Component({
   selector: 'app-entries',

@@ -1,0 +1,41 @@
+<div class="container">
+  <h1>Please Confirm Your Information</h1>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>License Number</th>
+        <th>TrailerNumber</th>
+        <th>Name</th>
+        <th>CompanyName</th>
+        <th>Destination</th>
+        <th>DateTime</th>
+        <th>Order Number</th>
+        <th>Exit Code</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor= "let exit of exities | async ">
+        <td>{{exit.data.LicenseNumber}}</td>
+        <td>{{exit.data.TrailerNumber}}</td>
+        <td>{{exit.data.Name}}</td>
+        <td>{{exit.data.CompanyName}}</td>
+        <td>{{exit.data.Destination}}</td>
+        <td>{{exit.data.DateTime}}</td>
+        <td>{{exit.data.ordernumber}}</td>
+        <td>{{exit.data.randomnum}}</td>
+        <td>
+          <a [routerLink] = "['/exit', exit.id]">
+            <i class="glyphicon glyphicon-edit"></i>
+          </a>
+        </td>
+        <!-- <td>
+          <a>
+            <i  (click)= "delete (user.id, user.data.name)" class= "glyphicon glyphicon-remove"></i>
+          </a>
+        </td> -->
+      </tr>
+    </tbody>
+  </table>
+  
+  </div>
