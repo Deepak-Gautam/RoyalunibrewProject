@@ -10,20 +10,20 @@ import { FlagsComponent } from './flags/flags.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { EntryLogsComponent } from './entry-logs/entry-logs.component';
-import { SvgIconsComponent } from './svg-icons/svg-icons.component';
 import { FormsModule } from '@angular/forms';
 import {ReactiveFormsModule} from '@angular/forms';
 import { EntriesComponent } from './entries/entries.component';
-import { QuizComponent } from './quiz/quiz.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { InstructionsComponent } from './instructions/instructions.component';
 // import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
     FlagsComponent,
     EntryLogsComponent,
-    SvgIconsComponent,
     EntriesComponent,
-    QuizComponent
+    NavbarComponent,
+    InstructionsComponent
   ],
   imports: [
     BrowserModule,
