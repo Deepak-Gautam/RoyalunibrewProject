@@ -6,6 +6,7 @@ import { EntriesComponent } from './entries/entries.component';
 import { InstructionsComponent } from './instructions/instructions.component';
 import { SelectionComponent } from './selection/selection.component';
 import { ExitLogsComponent } from './exit-logs/exit-logs.component';
+import { ExitiesComponent } from './exities/exities.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/', pathMatch: 'full'},
@@ -15,7 +16,9 @@ const routes: Routes = [
   {path: 'entry', component: EntryLogsComponent},
   {path: 'exit', component: ExitLogsComponent},
   {path: 'entries', component: EntriesComponent},
+  {path: 'exities', component: ExitiesComponent},
   {path: 'entry/:id' , component: EntryLogsComponent},
+  {path: 'exit/:id' , component: ExitLogsComponent},
 ];
 
 @NgModule({
