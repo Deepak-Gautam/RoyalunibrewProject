@@ -1,6 +1,7 @@
 
 
 export class ExitLogs {
+    id: number;
     LicenseNumber: string;
     TrailerNumber: string;
     Name: string;

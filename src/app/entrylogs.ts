@@ -9,5 +9,4 @@ CompanyName: string;
 Destination: string;
 DateTime: string;
 
-
 }

@@ -18,6 +18,7 @@ import { InstructionsComponent } from './instructions/instructions.component';
 import { SelectionComponent } from './selection/selection.component';
 import { ExitLogsComponent } from './exit-logs/exit-logs.component';
 import { ExitiesComponent } from './exities/exities.component';
+import {QuizComponent} from './quiz/quiz.component';
 // import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ExitiesComponent } from './exities/exities.component';
     InstructionsComponent,
     SelectionComponent,
     ExitLogsComponent,
-    ExitiesComponent
+    ExitiesComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,
