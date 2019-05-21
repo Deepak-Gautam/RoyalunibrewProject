@@ -1,6 +1,6 @@
 <div class="row row-btn">
   <div class="col-2 m-auto">
-    <a class="nav-btn m-auto" routerLink="" title="Back">
+    <a class="nav-btn m-auto" routerLink="/instructions" title="Back">
       <svg id="i-chevron-left" viewBox="0 0 32 32" width="60" height="100%" fill="none" stroke="currentcolor"
         stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
         <path d="M20 30 L8 16 20 2"></path>
@@ -10,31 +10,27 @@
   <div class="col-8 m-auto">
     <div class="container">
       <div class="row">
-        <div class="col-3">
-          <img src="/assets/images/shoes.png" />
-          <p class="text-center">Use Safety Shoes</p>
+        <div class="col-5">
+            <a routerLink="/entry">
+                <img class="arrival-img" src="/assets/images/arrived.gif" alt="Arrival">
+            </a>
+            <h2 class="text-center">Check-In</h2>
         </div>
-        <div class="col-3">
-          <img src="/assets/images/no-smoking.png" />
-          <p class="text-center">No Smoking</p>
+        <div class="col-5 offset-2">
+          <a routerLink="/exit">
+            <img class="departure-img" src="/assets/images/depart.gif" alt="Departure">
+            </a>
+            <h2 class="text-center">Check-Out</h2>
         </div>
-        <div class="col-3">
-          <img src="/assets/images/walk.png" />
-          <p class="text-center">Walk In Between Lines</p>
-        </div>
-        <div class="col-3">
-          <img src="/assets/images/trash.png" />
-          <p class="text-center">Use Trash Cans</p>
-        </div>
-      </div>
+    </div>
     </div>
   </div>
   <div class="col-2 m-auto">
-    <a class="nav-btn m-auto" routerLink="/selection" title="Next">
+    <!-- <a class="nav-btn m-auto" routerLink="" title="Next">
       <svg id="i-chevron-right" viewBox="0 0 32 32" width="60" height="100%" fill="none" stroke="currentcolor"
         stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
         <path d="M12 30 L24 16 12 2"></path>
       </svg>
-    </a>
+    </a> -->
   </div>
 </div>
