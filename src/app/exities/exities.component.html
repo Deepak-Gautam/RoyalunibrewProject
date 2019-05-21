@@ -10,6 +10,7 @@
         <th>Destination</th>
         <th>DateTime</th>
         <th>Order Number</th>
+        <th>Exit Code</th>
         <th>Edit</th>
       </tr>
     </thead>
@@ -22,6 +23,7 @@
         <td>{{exit.data.Destination}}</td>
         <td>{{exit.data.DateTime}}</td>
         <td>{{exit.data.ordernumber}}</td>
+        <td>{{exit.data.randomnum}}</td>
         <td>
           <a [routerLink] = "['/exit', exit.id]">
             <i class="glyphicon glyphicon-edit"></i>

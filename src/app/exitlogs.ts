@@ -8,5 +8,6 @@ export class ExitLogs {
     Destination: string;
     DateTime: string;
     ordernumber: string;
+    randumnum: number;
 
 }

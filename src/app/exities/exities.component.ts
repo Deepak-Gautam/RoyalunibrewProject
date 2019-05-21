@@ -15,7 +15,8 @@ export class ExitiesComponent implements OnInit {
   constructor(private afs: AngularFirestore, private router: Router) { }
 
   ngOnInit() {
-    this.exitCol = this.afs.collection('/exitlogs', ref => ref.orderBy('Name' , 'desc' ).limit(1));
+    // this.exitCol = this.afs.collection('/exitlogs', ref => ref.orderBy('Name' , 'desc' ).limit(1));
+    this.exitCol = this.afs.collection('/exitlogs');
     this.exities = this.exitCol.snapshotChanges().pipe(
     map(actions => {
       return actions.map( a => {

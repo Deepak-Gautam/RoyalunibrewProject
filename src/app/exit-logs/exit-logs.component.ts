@@ -21,6 +21,7 @@ export class ExitLogsComponent implements OnInit {
   Destination: string;
   DateTime: string;
   ordernumber: string;
+  randomnum: number;
   form: FormGroup;
   exit = new ExitLogs();
   entryDoc: AngularFirestoreDocument<ExitLogs>;
@@ -79,15 +80,16 @@ export class ExitLogsComponent implements OnInit {
         CompanyName: this.exit.CompanyName,
         Destination: this.exit.Destination,
         DateTime: this.exit.DateTime,
-        ordernumber: this.exit.ordernumber
-
+        ordernumber: this.exit.ordernumber,
+        randomnum: (Math.floor((Math.random() * 10000) + 1000))
       });
+
     }
     this.router.navigate(['/exities']);
+
   }
   // goBack(): void {
   //   this.location.back();
   // }
-
 
 }
