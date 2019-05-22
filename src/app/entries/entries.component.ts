@@ -29,7 +29,6 @@ export class EntriesComponent implements OnInit {
     );
   }
   add() {
-    this.router.navigate(['add']);
+    this.router.navigate(['entry']);
   }
-
 }
