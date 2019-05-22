@@ -1,49 +1,65 @@
-<div class="container">
-  <h1>{{title}}</h1>
-  <form [formGroup]="form" (ngSubmit)="submit()">
-    <div class="form-group">
-      <label for="LicenseNumber">License Number</label>
-      <input [(ngModel)]="entry.LicenseNumber" type="text" class="form-control" formControlName="LicenseNumber">
-      <div *ngIf=" form.controls.LicenseNumber.touched && !form.controls.LicenseNumber.valid" class="alert alert-danger">
-        LicenseNumber is required</div>
-    </div>
-    <div class="form-group">
-      <label for="TrailerNumber">Trailer Number</label>
-      <input [(ngModel)]="entry.TrailerNumber" type="text" class="form-control" formControlName="TrailerNumber">
-      <div *ngIf=" form.controls.TrailerNumber.touched && !form.controls.TrailerNumber.valid" class="alert alert-danger">
-        TrailerNumber is required</div>
-    </div>
-    <div class="form-group">
-      <label for="Name">Name</label>
-      <input [(ngModel)]="entry.Name" type="text" class="form-control" formControlName="Name">
-      <div *ngIf=" form.controls.Name.touched && !form.controls.Name.valid" class="alert alert-danger">
-        Name is required</div>
-    </div>
-    <div class="form-group">
-      <label for="CompanyName">Company Name</label>
-      <input [(ngModel)]="entry.CompanyName" type="text" class="form-control" formControlName="CompanyName">
-      <div *ngIf=" form.controls.CompanyName.touched && !form.controls.CompanyName.valid" class="alert alert-danger">
-        Company Name is required</div>
-    </div>
-
-    <div class="form-group">
-      <label for="Destination">Destination</label>
-      <input [(ngModel)]="entry.Destination" type="text" class="form-control" formControlName="TrailerNumber">
-      <div *ngIf=" form.controls.Destination.touched && !form.controls.Destination.valid" class="alert alert-danger">
-        Destination is required</div>
-    </div>
-    <div class="form-group">
-        <label for="DateTime">Arrival Time</label>
-        <input [(ngModel)]="entry.DateTime" type="text" class="form-control" formControlName="DateTime">
-        <div *ngIf=" form.controls.DateTime.touched && !form.controls.DateTime.valid" class="alert alert-danger">
-          Destination is required</div>
-      </div>
-     
-    <button class="btn btn-primary" type="submit">{{title}}</button>
+<div class="row row-btn">
+  <div class="col-2 m-auto">
+    <a class="nav-btn m-auto" routerLink="/selection" title="Back">
+      <svg id="i-chevron-left" viewBox="0 0 32 32" width="60" height="100%" fill="none" stroke="currentcolor"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+        <path d="M20 30 L8 16 20 2"></path>
+      </svg>
+    </a>
+  </div>
+  <div class="col-8 m-auto">
+    <div class="container">
+      <h1>{{title}}</h1>
+      <form [formGroup]="form" (ngSubmit)="submit()">
+        <div class="form-group">
+          <label for="LicenseNumber">License Number</label>
+          <input [(ngModel)]="entry.LicenseNumber" type="text" class="form-control" formControlName="LicenseNumber">
+          <div *ngIf=" form.controls.LicenseNumber.touched && !form.controls.LicenseNumber.valid" class="alert alert-danger">
+            LicenseNumber is required</div>
+        </div>
+        <div class="form-group">
+          <label for="TrailerNumber">Trailer Number</label>
+          <input [(ngModel)]="entry.TrailerNumber" type="text" class="form-control" formControlName="TrailerNumber">
+          <div *ngIf=" form.controls.TrailerNumber.touched && !form.controls.TrailerNumber.valid" class="alert alert-danger">
+            TrailerNumber is required</div>
+        </div>
+        <div class="form-group">
+          <label for="Name">Name</label>
+          <input [(ngModel)]="entry.Name" type="text" class="form-control" formControlName="Name">
+          <div *ngIf=" form.controls.Name.touched && !form.controls.Name.valid" class="alert alert-danger">
+            Name is required</div>
+        </div>
+        <div class="form-group">
+          <label for="CompanyName">Company Name</label>
+          <input [(ngModel)]="entry.CompanyName" type="text" class="form-control" formControlName="CompanyName">
+          <div *ngIf=" form.controls.CompanyName.touched && !form.controls.CompanyName.valid" class="alert alert-danger">
+            Company Name is required</div>
+        </div>
     
-  </form>
-  
+        <div class="form-group">
+          <label for="Destination">Destination</label>
+          <input [(ngModel)]="entry.Destination" type="text" class="form-control" formControlName="TrailerNumber">
+          <div *ngIf=" form.controls.Destination.touched && !form.controls.Destination.valid" class="alert alert-danger">
+            Destination is required</div>
+        </div>
+        <div class="form-group">
+            <label for="DateTime">Arrival Time</label>
+            <input [(ngModel)]="entry.DateTime" type="text" class="form-control" formControlName="DateTime">
+            <div *ngIf=" form.controls.DateTime.touched && !form.controls.DateTime.valid" class="alert alert-danger">
+              Destination is required</div>
+          </div>
+         
+        <button class="btn btn-primary" type="submit">{{title}}</button>
+        
+      </form>      
+    </div>
+  </div>
+  <div class="col-2 m-auto">
+    <a class="nav-btn m-auto" aria-disabled title="Next">
+      <svg id="i-chevron-right" viewBox="0 0 32 32" width="60" height="100%" fill="none" stroke="currentcolor"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+        <path d="M12 30 L24 16 12 2"></path>
+      </svg>
+    </a>
+  </div>
 </div>
-<!-- 
-<div class="container">
-<button class="btn btn-defult"><a href ="#" (click)="goBack()" >Go Back </a></button></div> -->
