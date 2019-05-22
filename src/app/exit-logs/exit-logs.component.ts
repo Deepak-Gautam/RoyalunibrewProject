@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firestore';
 import { Router, ActivatedRoute } from '@angular/router';
-import { Observable } from 'rxjs';
+import { Observable, merge } from 'rxjs';
 import { Location } from '@angular/common';
-import {ExitLogs} from '../exitlogs';
+import { ExitLogs } from '../exitlogs';
 
 @Component({
   selector: 'app-exit-logs',
@@ -27,7 +27,7 @@ export class ExitLogsComponent implements OnInit {
   entryDoc: AngularFirestoreDocument<ExitLogs>;
   singleEntry: Observable<ExitLogs>;
 
-  constructor(fb: FormBuilder,  private afs: AngularFirestore,
+  constructor(fb: FormBuilder, private afs: AngularFirestore,
               private router: Router, private route: ActivatedRoute, private location: Location) {
     this.form = fb.group({
       LicenseNumber: ['', Validators.required],
@@ -39,7 +39,6 @@ export class ExitLogsComponent implements OnInit {
       ordernumber: ['', Validators.required]
     });
   }
-
   ngOnInit() {
     this.route.params.subscribe(params => {
       this.id = params.id;
@@ -81,7 +80,8 @@ export class ExitLogsComponent implements OnInit {
         Destination: this.exit.Destination,
         DateTime: this.exit.DateTime,
         ordernumber: this.exit.ordernumber,
-        randomnum: (Math.floor((Math.random() * 10000) + 1000))
+        randomnum: (Math.floor((Math.random() * 10000) + 1000)),
+      }).then(ref => {ref.set({key: ref.id}, {merge: true});
       });
 
     }

@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
-import {ExitLogs} from '../exitlogs';
+import { ExitLogs } from '../exitlogs';
 import { Router } from '@angular/router';
-import {map} from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-exities',
   templateUrl: './exities.component.html',
@@ -15,16 +15,16 @@ export class ExitiesComponent implements OnInit {
   constructor(private afs: AngularFirestore, private router: Router) { }
 
   ngOnInit() {
-    // this.exitCol = this.afs.collection('/exitlogs', ref => ref.orderBy('Name' , 'desc' ).limit(1));
-    this.exitCol = this.afs.collection('/exitlogs');
+    this.exitCol = this.afs.collection('exitlogs', ref => ref.orderBy('key', 'desc').limit(1));
+    // this.exitCol = this.afs.collection('exitlogs/');
     this.exities = this.exitCol.snapshotChanges().pipe(
-    map(actions => {
-      return actions.map( a => {
-        const data = a.payload.doc.data() as ExitLogs ;
-        const id = a.payload.doc.id;
-        return{ id, data}  ;
-      });
-    })
+      map(actions => {
+        return actions.map(a => {
+          const data = a.payload.doc.data() as ExitLogs;
+          const id = a.payload.doc.id;
+          return { id, data };
+        });
+      })
     );
   }
   add() {
@@ -32,3 +32,5 @@ export class ExitiesComponent implements OnInit {
   }
 
 }
+
+// this.afs.doc('exitlogs/' + this.id)

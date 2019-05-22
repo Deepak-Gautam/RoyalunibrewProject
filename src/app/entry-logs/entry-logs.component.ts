@@ -73,10 +73,11 @@ export class EntryLogsComponent implements OnInit {
         Name: this.entry.Name,
         CompanyName: this.entry.CompanyName,
         Destination: this.entry.Destination,
-        DateTime: this.entry.DateTime
+        DateTime: this.entry.DateTime,
+      }).then(ref => {ref.set({key: ref.id}, {merge: true});
+    });
 
-      });
-    }
+  }
     this.router.navigate(['/entries']);
   }
   goBack(): void {
