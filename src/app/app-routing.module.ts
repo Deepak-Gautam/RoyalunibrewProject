@@ -7,6 +7,7 @@ import { InstructionsComponent } from './instructions/instructions.component';
 import { SelectionComponent } from './selection/selection.component';
 import { ExitLogsComponent } from './exit-logs/exit-logs.component';
 import { ExitiesComponent } from './exities/exities.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/', pathMatch: 'full'},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'exities', component: ExitiesComponent},
   {path: 'entry/:id' , component: EntryLogsComponent},
   {path: 'exit/:id' , component: ExitLogsComponent},
+  {path: 'quiz' , component: QuizComponent},
 ];
 
 @NgModule({
