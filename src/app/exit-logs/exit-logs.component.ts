@@ -38,6 +38,7 @@ export class ExitLogsComponent implements OnInit {
       DateTime: ['', Validators.required],
       ordernumber: ['', Validators.required]
     });
+
   }
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -72,7 +73,7 @@ export class ExitLogsComponent implements OnInit {
         ordernumber: this.exit.ordernumber
       });
     } else {
-      this.afs.collection('exitlogs').add({
+      this.afs.collection('exitlogs').doc('1').set({
         LicenseNumber: this.exit.LicenseNumber,
         TrailerNumber: this.exit.TrailerNumber,
         Name: this.exit.Name,
@@ -81,7 +82,7 @@ export class ExitLogsComponent implements OnInit {
         DateTime: this.exit.DateTime,
         ordernumber: this.exit.ordernumber,
         randomnum: (Math.floor((Math.random() * 10000) + 1000)),
-      }).then(ref => {ref.set({key: ref.id}, {merge: true});
+      // }).then(ref => {ref.set({key: ref.id}, {merge: true});
       });
 
     }

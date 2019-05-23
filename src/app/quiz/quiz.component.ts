@@ -34,7 +34,7 @@ export class QuizComponent implements OnInit {
   }, {
       question: 'What do you need to take Load?',
       choices: ['Transport Number', 'License Number', 'Letter From Company', 'Fill exit form'],
-      correctAnswer: 2
+      correctAnswer: 3
   }];
 
     $(document).ready(function() {
