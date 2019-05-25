@@ -19,6 +19,8 @@ import { SelectionComponent } from './selection/selection.component';
 import { ExitLogsComponent } from './exit-logs/exit-logs.component';
 import { ExitiesComponent } from './exities/exities.component';
 import {QuizComponent} from './quiz/quiz.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { DragDropComponent } from './drag-drop/drag-drop.component';
 // import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import {QuizComponent} from './quiz/quiz.component';
     SelectionComponent,
     ExitLogsComponent,
     ExitiesComponent,
-    QuizComponent
+    QuizComponent,
+    DragDropComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,7 @@ import {QuizComponent} from './quiz/quiz.component';
     AngularSvgIconModule,
     FormsModule,
     ReactiveFormsModule,
+    DragDropModule,
     // MatDatepickerModule, MatInputModule,MatNativeDateModule,
   ],
   providers: [],
