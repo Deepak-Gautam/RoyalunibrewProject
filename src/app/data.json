@@ -15,9 +15,9 @@
       "id": "inprogress",
       "tasks": [
         {
-          "id": "first-task",
-          "title": "First Task",
-          "description": "This is my first task"
+          "id": "second-task",
+          "title": "Second Task",
+          "description": "This is my second task"
         }
       ]
     },
@@ -26,9 +26,9 @@
       "id": "ddone",
       "tasks": [
         {
-          "id": "first-task",
-          "title": "First Task",
-          "description": "This is my first task"
+          "id": "third-task",
+          "title": "Third Task",
+          "description": "This is my third task"
         }
       ]
     },
@@ -37,9 +37,9 @@
       "id": "qapass",
       "tasks": [
         {
-          "id": "first-task",
-          "title": "First Task",
-          "description": "This is my first task"
+          "id": "fourth-task",
+          "title": "Fourth Task",
+          "description": "This is my fourth task"
         }
       ]
     }
