@@ -102,7 +102,7 @@ export class QuizComponent implements OnInit {
       let i: number;
       for ( i = 0; i < numChoices; i++) {
         choice = questions[currentQuestion].choices[i];
-        $('<li><input type="radio" value=' + i + ' name="dynradio" />' + choice + '</li>').appendTo(choiceList);
+        $('<li><input type="radio" value=' + i + ' name="dynradio" />' + choice + '</li>').appendTo('.choiceList');
       }
     }
 

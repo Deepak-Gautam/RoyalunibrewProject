@@ -1,0 +1,25 @@
+<div cdkDropListGroup>
+  <div class="example-container">
+    <h2>Order Number</h2>
+
+    <div
+      cdkDropList
+      [cdkDropListData]="todo"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let num of ordernumber | async" cdkDrag>{{num.data.orderNumber}}</div>
+    </div>
+  </div>
+
+  <div class="example-container">
+    <h2>Drag Here</h2>
+
+    <div
+      cdkDropList
+      [cdkDropListData]="done"
+      class="example-list"
+      (cdkDropListDropped)="drop($event)">
+      <!-- <div class="example-box" cdkDrag>{{num.data.orderNumber}}</div> -->
+    </div>
+  </div>
+</div>
