@@ -38,15 +38,17 @@
         <div *ngIf=" form.controls.DateTime.touched && !form.controls.DateTime.valid" class="alert alert-danger">
           Destination is required</div>
       </div>
+      <div class="cdk-droppable">
       <div class="form-group">
-        <label for="DateTime">Order Number</label>
+        <label for="ordernumber">Order Number</label>
         <input [(ngModel)]="exit.ordernumber" type="text" class="form-control" formControlName="DateTime">
-        <div *ngIf=" form.controls.DateTime.touched && !form.controls.DateTime.valid" class="alert alert-danger">
+        <div *ngIf=" form.controls.ordernumber.touched && !form.controls.DateTime.valid" class="alert alert-danger">
           Order Number is required</div>
       </div>
+    </div>
      
     <button class="btn btn-primary" type="submit">{{title}}</button>
     
   </form>
-  
+  <app-drag-drop></app-drag-drop>
 </div>
