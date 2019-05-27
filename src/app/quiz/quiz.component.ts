@@ -16,24 +16,24 @@ export class QuizComponent implements OnInit {
     let quizOver = false;
 
     const questions = [{
-      question: 'How many drinks can you take at one time?',
-      choices: ['one', 'Two', 'Three', 'Four'],
+      question: 'How many drinks can you take at a time?',
+      choices: ['One', 'Two', 'Three', 'Four'],
       correctAnswer: 0
   }, {
-      question: 'Which is safety dress is most Compulsory?',
-      choices: [ 'Safety Goggles', 'Wearing Shoes', 'Jeans Pant', 'Gloves'],
+      question: 'Which safety rule is compulsory?',
+      choices: [ 'Safety Goggles', 'Safety Shoes', 'Jeans Pant', 'Gloves'],
       correctAnswer: 1
   }, {
-      question: 'What do you need to get out with loaded turck?',
-      choices: ['Get Key', 'Written Documents', 'Licenese Number', 'Exit Code'],
+      question: 'What do you need to get out with loaded truck?',
+      choices: ['Get Key', 'Written Documents', 'License Number', 'Exit Code'],
       correctAnswer: 3
   }, {
-      question: 'Where should you walk always?',
+      question: 'Where should you always walk?',
       choices: ['Between the Line', 'Anywhere you like', 'Middle of the road', 'I dont know'],
       correctAnswer: 0
   }, {
       question: 'What do you need to take Load?',
-      choices: ['Transport Number', 'License Number', 'Letter From Company', 'Fill exit form'],
+      choices: ['Transport Number', 'License Number', 'Letter From Company', 'Exit Form'],
       correctAnswer: 3
   }];
 

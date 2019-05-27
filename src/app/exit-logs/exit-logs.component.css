@@ -1,0 +1,44 @@
+
+input {
+    padding: 15px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    background: #eee;
+}
+
+    input.invalid {
+        background-color: #eee;
+    }
+
+ input:focus {
+    background-color: #eee;
+    border-color: #c5c400;
+    outline: none;
+    box-shadow: none;
+}
+.alert{
+     padding: 10px;
+}
+ .btn-default{
+     margin-top: 5%;
+     width:15%;
+     background-color: #154f3e;
+     border-color: #154f3e; 
+ }
+ .unibutton{
+    background-color: #154f3e;
+    border-color: #154f3e; 
+    margin: 20px 0px;
+ }
+ .btn:focus,.btn:active:focus,.btn.active:focus,
+ .btn.focus,.btn:active.focus,.btn.active.focus {
+     outline: none !important;
+     box-shadow: none !important;
+     background: #154f3e !important;
+     text-decoration: none !important;
+ }
+.formstyle{
+    width: 65%;
+}
