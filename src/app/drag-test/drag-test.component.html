@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <h2>True</h2>
+    </div>
+    <div class="col-4">
+      <h2>Drag these statements to true or false.</h2>
+    </div>
+    <div class="col-4">
+      <h2>False</h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <div cdkDropList #trueList="cdkDropList" [cdkDropListData]="aaa" class="example-list"
+        (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let item of aaa" cdkDragLockAxis="y" cdkDrag>{{item}}</div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div cdkDropList #listList="cdkDropList" [cdkDropListData]="List" [cdkDropListConnectedTo]="[trueList, falseList]"
+        class="example-list" (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let item of List" cdkDrag>{{item}}</div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div cdkDropList #falseList="cdkDropList" [cdkDropListData]="xxx" class="example-list"
+        (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let item of xxx" cdkDragLockAxis="y" cdkDrag>{{item}}</div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,6 +7,11 @@
           "id": "first-task",
           "title": "First Task",
           "description": "This is my first task"
+        },
+        {
+          "id": "third-task",
+          "title": "Third Task",
+          "description": "This is my third task"
         }
       ]
     },
@@ -18,29 +23,28 @@
           "id": "second-task",
           "title": "Second Task",
           "description": "This is my second task"
-        }
+        },
+        {          
+        "id": "fourth-task",
+        "title": "Fourth Task",
+        "description": "This is my fourth task"
+      }
       ]
     },
     {
-      "title": "D-Done",
-      "id": "ddone",
+      "title": "Done",
+      "id": "done",
       "tasks": [
         {
-          "id": "third-task",
-          "title": "Third Task",
-          "description": "This is my third task"
-        }
-      ]
-    },
-    {
-      "title": "QA Pass",
-      "id": "qapass",
-      "tasks": [
-        {
-          "id": "fourth-task",
-          "title": "Fourth Task",
-          "description": "This is my fourth task"
-        }
+          "id": "fifth-task",
+          "title": "Fifth Task",
+          "description": "This is my fifth task"
+        },
+        {          
+        "id": "sixth-task",
+        "title": "Sixth Task",
+        "description": "This is my sixth task"
+      }
       ]
     }
   ]
