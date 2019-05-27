@@ -8,16 +8,17 @@
   overflow-x: auto;
   overflow-y: hidden;
 }
-.mat-h2{
-  padding: 16px;
+.mat-h3{
+  padding: 8px 0;
   color: #fff;
   background-color: #154f3e;
   border-radius: 4px;
 }
 .mat-card{
   background-color: #ddd;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   cursor: pointer;
+  padding: 6px 12px;
 }
 .mat-card:hover{
   background-color: #ccc;
@@ -38,7 +39,7 @@
   flex-direction: column;
 }
 
-.card-list h2 {
+.card-list h3 {
   margin-bottom: 5px;
 }
 
