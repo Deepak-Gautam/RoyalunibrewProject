@@ -20,11 +20,9 @@ import { ExitLogsComponent } from './exit-logs/exit-logs.component';
 import { ExitiesComponent } from './exities/exities.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
-import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { NgdragComponent } from './ngdrag/ngdrag.component';
 import { MatCardModule } from '@angular/material';
 import { UnidocComponent } from './unidoc/unidoc.component';
-import { DragTestComponent } from './drag-test/drag-test.component';
 // import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
 @NgModule({
   declarations: [
@@ -38,10 +36,8 @@ import { DragTestComponent } from './drag-test/drag-test.component';
     ExitLogsComponent,
     ExitiesComponent,
     QuizComponent,
-    DragDropComponent,
     NgdragComponent,
     UnidocComponent,
-    DragTestComponent,
   ],
   imports: [
     BrowserModule,

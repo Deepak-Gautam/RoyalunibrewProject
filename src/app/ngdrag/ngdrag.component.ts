@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
-import { Task, Track } from '../track.model';
+import { Task, Track } from '../Track.model';
+import { isNgTemplate } from '@angular/compiler';
 
 @Component({
   selector: 'app-ngdrag',
@@ -15,21 +16,14 @@ export class NgdragComponent implements OnInit {
   }
 
   onTalkDrop(event: CdkDragDrop<Task[]>) {
-    // In case the destination container is different from the previous container, we
-    // need to transfer the given task to the target data array. This happens if
-    // a task has been dropped on a different track.
-    if (event.previousContainer === event.container) {
-      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
-    } else {
+    // if (event.previousContainer === event.container) {
+    //   moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+    if (event.previousContainer !== event.container) {
       transferArrayItem(event.previousContainer.data,
         event.container.data,
         event.previousIndex,
         event.currentIndex);
     }
-  }
-
-  onTrackDrop(event: CdkDragDrop<Track[]>) {
-    moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
   }
 
   constructor() { }
