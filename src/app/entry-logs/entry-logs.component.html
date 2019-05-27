@@ -15,7 +15,8 @@
         <div class="form-group">
           <label for="LicenseNumber">License Number</label>
           <input [(ngModel)]="entry.LicenseNumber" type="text" class="form-control" formControlName="LicenseNumber">
-          <div *ngIf=" form.controls.LicenseNumber.touched && !form.controls.LicenseNumber.valid" class="alert alert-danger">
+          <div *ngIf=" form.controls.LicenseNumber.touched && !form.controls.LicenseNumber.valid"
+           class="alert alert-danger">
             LicenseNumber is required</div>
         </div>
         <div class="form-group">

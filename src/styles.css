@@ -15,10 +15,11 @@ a:hover{
     color: #269e7b;
 }
 .row{
-    margin: 0;
+    margin: auto;
+    width: 100%;
 }
 .row-btn {
-    height: calc(100vh - 115px);
+     height: calc(100vh - 115px); 
 }
 .nav-btn {
     display: block;
