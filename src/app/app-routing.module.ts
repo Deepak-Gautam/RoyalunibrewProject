@@ -10,6 +10,7 @@ import { ExitiesComponent } from './exities/exities.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { NgdragComponent } from './ngdrag/ngdrag.component';
+import { UnidocComponent } from './unidoc/unidoc.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/', pathMatch: 'full'},
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path: 'quiz' , component: QuizComponent},
   {path: 'drag' , component: DragDropComponent},
   {path: 'ngdrag' , component: NgdragComponent},
+  {path: 'unidoc' , component: UnidocComponent}
 ];
 
 @NgModule({

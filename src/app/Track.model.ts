@@ -3,8 +3,8 @@ export interface Track {
     id: string;
     tasks: Task[];
   }
-  
-  export interface Task {
+
+export interface Task {
     title: string;
     description: string;
     id: string;
