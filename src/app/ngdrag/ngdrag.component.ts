@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
-import { Task, Track } from '../Track.model';
+import { Task, Track } from '../track.model';
 
 @Component({
   selector: 'app-ngdrag',

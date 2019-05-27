@@ -14,10 +14,12 @@ img {
 button{
   background-color: #154f3e;
 
+
 }
 button:focus{
   background-color: #154f3e;
   border: none;
+  outline: 0px;
 }
 .dropdown-item{
   color: white;
