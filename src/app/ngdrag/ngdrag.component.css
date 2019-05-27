@@ -8,11 +8,16 @@
   overflow-x: auto;
   overflow-y: hidden;
 }
-
+.mat-h2{
+  padding: 16px;
+}
 .mat-card{
   background-color: #ddd;
   margin-bottom: 1rem;
   cursor: pointer;
+}
+.mat-card:hover{
+  background-color: #ccc;
 }
 .card-list {
   height: 100%;
@@ -23,7 +28,7 @@
   flex-shrink: 0;
   background: rgba(0, 0, 0, 0.03);
   border-radius: 4px;
-  padding: 8px;
+  padding: 0 8px;
 }
 
 .card-list {

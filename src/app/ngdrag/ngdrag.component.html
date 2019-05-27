@@ -2,7 +2,7 @@
 
     <div class="card-list mat-elevation-z1" *ngFor="let track of tracks">
   
-      <h2 class="mat-h2">{{track.title}}</h2>
+      <h2 class="mat-h2 text-center">{{track.title}}</h2>
   
       <div class="card-list-content" cdkDropList [id]="track.id" [cdkDropListData]="track.tasks"
         [cdkDropListConnectedTo]="trackIds" (cdkDropListDropped)="onTalkDrop($event)">  
