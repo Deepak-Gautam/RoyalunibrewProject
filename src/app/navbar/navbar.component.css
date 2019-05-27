@@ -15,9 +15,21 @@ button{
   background-color: #154f3e;
 
 }
-button:focus{
-  background-color: #154f3e;
-  border: none;
+.btn-secondary:not(:disabled):not(.disabled).active, 
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show>.btn-secondary.dropdown-toggle, button:focus, button:hover{
+
+ background-color: #154f3e;
+  border-color:#154f3e;
+  outline: none;
+  box-shadow: none;
+}
+.dropdown{
+  position: relative;
+  width: 65%;
+  text-align: left;
+  margin: auto;
+  top: 45px;  
 }
 .dropdown-item{
   color: white;
@@ -26,8 +38,12 @@ button:focus{
   background-color: #154f3e;
 }
 .dropdown-item:hover{
-  color: black;
-  background-color: #eee;
+  color: #fff;
+  background-color: #154f3e;
+}
+.navbar-brand{
+  float: left;
+  margin: 10px 0px 0px 10px;
 }
 
 
