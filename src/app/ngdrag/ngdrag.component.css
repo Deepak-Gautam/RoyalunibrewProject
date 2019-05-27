@@ -12,6 +12,7 @@
   padding: 16px;
   color: #fff;
   background-color: #154f3e;
+  border-radius: 4px;
 }
 .mat-card{
   background-color: #ddd;
@@ -30,7 +31,6 @@
   flex-shrink: 0;
   background: rgba(0, 0, 0, 0.03);
   border-radius: 4px;
-  padding: 0 8px;
 }
 
 .card-list {
@@ -50,6 +50,7 @@
 .card-list-content {
   overflow: auto;
   flex-grow: 1;
+  padding: 6px;
 }
 
 .cdk-drag-animating,
