@@ -11,3 +11,23 @@ img {
     width: 64px;
   }
 }
+button{
+  background-color: #154f3e;
+
+}
+button:focus{
+  background-color: #154f3e;
+  border: none;
+}
+.dropdown-item{
+  color: white;
+}
+.dropdown-menu{
+  background-color: #154f3e;
+}
+.dropdown-item:hover{
+  color: black;
+  background-color: #eee;
+}
+
+
