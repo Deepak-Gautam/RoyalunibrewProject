@@ -8,7 +8,20 @@
   overflow-x: auto;
   overflow-y: hidden;
 }
-
+.mat-h2{
+  padding: 16px;
+  color: #fff;
+  background-color: #154f3e;
+  border-radius: 4px;
+}
+.mat-card{
+  background-color: #ddd;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.mat-card:hover{
+  background-color: #ccc;
+}
 .card-list {
   height: 100%;
   width: 320px;
@@ -18,7 +31,6 @@
   flex-shrink: 0;
   background: rgba(0, 0, 0, 0.03);
   border-radius: 4px;
-  padding: 8px;
 }
 
 .card-list {
@@ -38,6 +50,7 @@
 .card-list-content {
   overflow: auto;
   flex-grow: 1;
+  padding: 6px;
 }
 
 .cdk-drag-animating,

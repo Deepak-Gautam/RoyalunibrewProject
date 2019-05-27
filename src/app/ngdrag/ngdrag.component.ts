@@ -26,10 +26,6 @@ export class NgdragComponent implements OnInit {
     }
   }
 
-  // onTrackDrop(event: CdkDragDrop<Track[]>) {
-  //   moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
-  // }
-
   constructor() { }
 
   ngOnInit() {
