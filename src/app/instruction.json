@@ -1,6 +1,6 @@
 [
     {
-        "name": "hello0",
+        "name": "hello",
         "type": "true"
     },
     {
@@ -12,31 +12,12 @@
         "type": "true"
     },
     {
-        "name": "hello3",
+        "name": "Try to move me",
         "type": "false"
     },
     {
         "name": "hello4",
         "type": "true"
-    },
-    {
-        "name": "hello5",
-        "type": "false"
-    },
-    {
-        "name": "hello6",
-        "type": "true"
-    },
-    {
-        "name": "hello7",
-        "type": "false"
-    },
-    {
-        "name": "hello8",
-        "type": "true"
-    },
-    {
-        "name": "hello9",
-        "type": "false"
     }
+    
 ]

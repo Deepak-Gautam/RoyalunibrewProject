@@ -50,25 +50,17 @@
         <div *ngIf=" form.controls.DateTime.touched && !form.controls.DateTime.valid" class="alert alert-danger">
           Destination is required</div>
       </div>
+      <div class="cdk-droppable">
       <div class="form-group">
-        <label for="DateTime">Order Number</label>
+        <label for="ordernumber">Order Number</label>
         <input [(ngModel)]="exit.ordernumber" type="text" class="form-control" formControlName="DateTime">
-        <div *ngIf=" form.controls.DateTime.touched && !form.controls.DateTime.valid" class="alert alert-danger">
+        <div *ngIf=" form.controls.ordernumber.touched && !form.controls.DateTime.valid" class="alert alert-danger">
           Order Number is required</div>
       </div>
+    </div>
      
     <button class="btn btn-primary unibutton" type="submit">{{title}}</button>
     
   </form>
-  
-</div>
-  </div>
-<div class="col-2 m-auto">
-  <a class="nav-btn m-auto" aria-disabled title="Next">
-    <svg id="i-chevron-right" viewBox="0 0 32 32" width="60" height="100%" fill="none" stroke="currentcolor"
-      stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-      <path d="M12 30 L24 16 12 2"></path>
-    </svg>
-  </a>
-</div>
+  <app-drag-drop></app-drag-drop>
 </div>

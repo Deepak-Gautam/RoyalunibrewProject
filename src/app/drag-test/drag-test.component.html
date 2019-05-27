@@ -19,10 +19,14 @@
       </div>
     </div>
     <div class="col-4">
-      <div cdkDropList #listList="cdkDropList" [cdkDropListData]="List" [cdkDropListConnectedTo]="[trueList, falseList]"
+      <div cdkDropList #listList="cdkDropList" [cdkDropListData]="List" [cdkDropListConnectedTo]="[trueList,listList1]"
         class="example-list" (cdkDropListDropped)="drop($event)">
         <div class="example-box" *ngFor="let item of List" cdkDrag>{{item.name}}</div>
       </div>
+      <div cdkDropList #listList1="cdkDropList" [cdkDropListData]="List2" [cdkDropListConnectedTo]="[listList, falseList]"
+      class="example-list" (cdkDropListDropped)="drop($event)">
+      <div class="example-box" *ngFor="let item of List2" cdkDrag>{{item.name}}</div>
+    </div>
     </div>
     <div class="col-4">
       <div cdkDropList #falseList="cdkDropList" [cdkDropListData]="xxx" class="example-list"

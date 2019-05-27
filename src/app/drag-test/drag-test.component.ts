@@ -10,8 +10,14 @@ export class DragTestComponent implements OnInit {
   aaa = [];
   xxx = [];
   List: [] = require('../instruction.json');
+  List2: [] = require('../instruction1.json');
 
   drop(event: CdkDragDrop<string[]>) {
+
+    if (event.item.data === 'Try to move me') {
+      console.log('this isn\'t happening today');
+      return;
+    }
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
     } else {
