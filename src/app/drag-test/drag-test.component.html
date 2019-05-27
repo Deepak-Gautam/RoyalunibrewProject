@@ -13,25 +13,21 @@
 
   <div class="row">
     <div class="col-4">
-      <div cdkDropList #trueList="cdkDropList" [cdkDropListData]="aaa" class="example-list"
+      <div cdkDropList [id]="trueList" [cdkDropListData]="aaa" class="example-list"
         (cdkDropListDropped)="drop($event)">
-        <div class="example-box" *ngFor="let item of aaa" cdkDragLockAxis="y" cdkDrag>{{item.name}}</div>
+        <div class="example-box" *ngFor="let item of aaa" cdkDrag>{{item.name}}</div>
       </div>
     </div>
     <div class="col-4">
-      <div cdkDropList #listList="cdkDropList" [cdkDropListData]="List" [cdkDropListConnectedTo]="[trueList,listList1]"
+      <div cdkDropList [id]="listList" [cdkDropListData]="List" [cdkDropListConnectedTo]="['trueList','falseList']"
         class="example-list" (cdkDropListDropped)="drop($event)">
-        <div class="example-box" *ngFor="let item of List" cdkDrag>{{item.name}}</div>
+        <div class="example-box" *ngFor="let item of List" [cdkDragData]="List.id" cdkDrag>{{item.name}}</div>
       </div>
-      <div cdkDropList #listList1="cdkDropList" [cdkDropListData]="List2" [cdkDropListConnectedTo]="[listList, falseList]"
-      class="example-list" (cdkDropListDropped)="drop($event)">
-      <div class="example-box" *ngFor="let item of List2" cdkDrag>{{item.name}}</div>
-    </div>
     </div>
     <div class="col-4">
-      <div cdkDropList #falseList="cdkDropList" [cdkDropListData]="xxx" class="example-list"
+      <div cdkDropList [id]="falseList" [cdkDropListData]="xxx" class="example-list"
         (cdkDropListDropped)="drop($event)">
-        <div class="example-box" *ngFor="let item of xxx" cdkDragLockAxis="y" cdkDrag>{{item.name}}</div>
+        <div class="example-box" *ngFor="let item of xxx" cdkDrag>{{item.name}}</div>
       </div>
     </div>
   </div>

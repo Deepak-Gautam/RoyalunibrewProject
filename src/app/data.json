@@ -9,33 +9,27 @@
     "id": "inprogress",
     "tasks": [{
         "id": "1",
-        "title": "First Task",
-        "description": "This is my first task"
+        "title": "First Task"
       }, 
       {
         "id": "2",
-        "title": "Second Task",
-        "description": "This is my second task"
+        "title": "Second Task"
       },
       {
         "id": "1",
-        "title": "Fourth Task",
-        "description": "This is my fourth task"
+        "title": "Fourth Task"
       },
       {
         "id": "2",
-        "title": "Third Task",
-        "description": "This is my third task"
+        "title": "Third Task"
       },
       {
         "id": "1",
-        "title": "Fifth Task",
-        "description": "This is my fifth task"
+        "title": "Fifth Task"
       },
       {
         "id": "2",
-        "title": "Sixth Task",
-        "description": "This is my sixth task"
+        "title": "Sixth Task"
       }
     ]
   },
