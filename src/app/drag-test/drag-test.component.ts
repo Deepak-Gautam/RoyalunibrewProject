@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { CdkDragDrop, moveItemInArray, transferArrayItem, CdkDrag } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-drag-test',
@@ -7,11 +7,17 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
   styleUrls: ['./drag-test.component.css']
 })
 export class DragTestComponent implements OnInit {
-  aaa = ['aaa', 'bbb'];
-  xxx = ['xxx', 'yyy'];
+  aaa = [];
+  xxx = [];
   List: [] = require('../instruction.json');
+  List2: [] = require('../instruction1.json');
 
   drop(event: CdkDragDrop<string[]>) {
+
+    if (event.item.data === 'Try to move me') {
+      console.log('this isn\'t happening today');
+      return;
+    }
     if (event.previousContainer === event.container) {
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
     } else {
@@ -21,7 +27,6 @@ export class DragTestComponent implements OnInit {
         event.currentIndex);
     }
   }
-
   constructor() { }
 
   ngOnInit() {

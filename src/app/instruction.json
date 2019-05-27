@@ -1,12 +1,23 @@
 [
-    "hello0",
-    "hello1",
-    "hello2",
-    "hello3",
-    "hello4",
-    "hello5",
-    "hello6",
-    "hello7",
-    "hello8",
-    "hello9"
+    {
+        "name": "hello",
+        "type": "true"
+    },
+    {
+        "name": "hello1",
+        "type": "false"
+    },
+    {
+        "name": "hello2",
+        "type": "true"
+    },
+    {
+        "name": "Try to move me",
+        "type": "false"
+    },
+    {
+        "name": "hello4",
+        "type": "true"
+    }
+    
 ]
