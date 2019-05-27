@@ -33,3 +33,9 @@ a:hover{
     -ms-border-radius: 50%;
     border-radius: 50%;
 }
+input[type=radio] {
+    box-sizing: border-box;
+    margin-right:20px !important;
+    width: 30px;
+    height: 18px;
+}
