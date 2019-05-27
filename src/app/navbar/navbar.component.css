@@ -28,8 +28,9 @@ button{
   position: relative;
   width: 65%;
   text-align: left;
-  margin: auto;
+  margin:0px auto ;
   top: 45px;  
+  
 }
 .dropdown-item{
   color: white;
