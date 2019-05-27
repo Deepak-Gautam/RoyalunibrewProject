@@ -10,6 +10,7 @@ import { ExitiesComponent } from './exities/exities.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { NgdragComponent } from './ngdrag/ngdrag.component';
+import { UnidocComponent } from './unidoc/unidoc.component';
 import { DragTestComponent } from './drag-test/drag-test.component';
 
 const routes: Routes = [
@@ -26,6 +27,7 @@ const routes: Routes = [
   {path: 'quiz' , component: QuizComponent},
   {path: 'drag' , component: DragDropComponent},
   {path: 'ngdrag' , component: NgdragComponent},
+  {path: 'unidoc' , component: UnidocComponent},
   {path: 'dragtest' , component: DragTestComponent},
 ];
 
