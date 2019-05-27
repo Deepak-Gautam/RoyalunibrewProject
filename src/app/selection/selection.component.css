@@ -1,0 +1,9 @@
+.text-center {
+    text-align: center!important;
+    font-size: 22px;
+    color: #154f3e;
+    padding-top: 20px;
+}
+.arrival-img, .departure-img{
+    width: 90%;
+}

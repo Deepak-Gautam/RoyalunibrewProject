@@ -23,6 +23,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { DragDropComponent } from './drag-drop/drag-drop.component';
 import { NgdragComponent } from './ngdrag/ngdrag.component';
 import { MatCardModule } from '@angular/material';
+import { UnidocComponent } from './unidoc/unidoc.component';
 import { DragTestComponent } from './drag-test/drag-test.component';
 // import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
 @NgModule({
@@ -39,6 +40,7 @@ import { DragTestComponent } from './drag-test/drag-test.component';
     QuizComponent,
     DragDropComponent,
     NgdragComponent,
+    UnidocComponent,
     DragTestComponent,
   ],
   imports: [

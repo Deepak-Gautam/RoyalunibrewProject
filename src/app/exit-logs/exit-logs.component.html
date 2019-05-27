@@ -1,5 +1,17 @@
-<div class="container">
+<div class="row row-btn">
+  <div class="col-2 m-auto">
+    <a class="nav-btn m-auto" routerLink="/selection" title="Back">
+      <svg id="i-chevron-left" viewBox="0 0 32 32" width="60" height="100%" fill="none" stroke="currentcolor"
+        stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+        <path d="M20 30 L8 16 20 2"></path>
+      </svg>
+    </a>
+  </div>
+  <div class="col-8 m-auto ">
+
+<div class="container formstyle">
   <h1>{{title}}</h1>
+  <br/>
   <form [formGroup]="form" (ngSubmit)="submit()">
     <div class="form-group">
       <label for="LicenseNumber">License Number</label>
@@ -47,7 +59,7 @@
       </div>
     </div>
      
-    <button class="btn btn-primary" type="submit">{{title}}</button>
+    <button class="btn btn-primary unibutton" type="submit">{{title}}</button>
     
   </form>
   <app-drag-drop></app-drag-drop>
