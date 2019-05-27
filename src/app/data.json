@@ -1,12 +1,12 @@
 [{
-    "title": "Todo",
-    "id": "todo",
+    "title": "True",
+    "id": "true",
     "tasks": [
     ]
   },
   {
-    "title": "In Progress",
-    "id": "inprogress",
+    "title": "Statements",
+    "id": "statements",
     "tasks": [{
         "id": "1",
         "title": "First Task"
@@ -34,8 +34,8 @@
     ]
   },
   {
-    "title": "Done",
-    "id": "done",
+    "title": "False",
+    "id": "false",
     "tasks": [
     ]
   }

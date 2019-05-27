@@ -9,6 +9,11 @@
   overflow-y: hidden;
 }
 
+.mat-card{
+  background-color: #ddd;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
 .card-list {
   height: 100%;
   width: 320px;
