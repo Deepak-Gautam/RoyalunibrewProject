@@ -25,7 +25,7 @@ p {
 /* Quiz Classes */
  .quizContainer {
     height: 50vh;
-    background-color: darkslategrey;
+    background-color: #154f3e;
     border-radius: 6px;
     width: 75%;
     margin: auto;
