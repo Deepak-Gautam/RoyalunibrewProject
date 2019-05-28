@@ -9,7 +9,7 @@ import { isNgTemplate } from '@angular/compiler';
   styleUrls: ['./ngdrag.component.css']
 })
 export class NgdragComponent implements OnInit {
-  private tracks: Track[] = require('../data.json');
+  tracks: Track[] = require('../data.json');
 
   get trackIds(): string[] {
     return this.tracks.map(track => track.id);
