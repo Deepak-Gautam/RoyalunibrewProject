@@ -31,4 +31,7 @@ export class EntriesComponent implements OnInit {
   add() {
     this.router.navigate(['entry']);
   }
+  myFunction() {
+    window.print();
+  }
 }
