@@ -1,7 +1,9 @@
 nav{
     padding: 10px;
 }
-
+li{
+  margin-left: 20px;
+}
 img {
   width: 7rem;
 }
@@ -25,27 +27,19 @@ button{
   outline: none;
   box-shadow: none;
 }
-.dropdown{
-  position: relative;
-  width: 65%;
-  text-align: left;
-  margin:0px auto ;
-  top: 45px;  
-  
-}
-.dropdown-item{
-  color: white;
-}
-.dropdown-menu{
-  background-color: #154f3e;
-}
-.dropdown-item:hover{
-  color: #fff;
-  background-color: #154f3e;
-}
+
 .navbar-brand{
   float: left;
-  margin: 10px 0px 0px 10px;
+  margin: 0px 0px 0px 0px;
 }
-
-
+.bg-light {
+  background-color: #eee!important;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+.navbar-nav{
+  padding-left: 30px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #154f3e;
+}
