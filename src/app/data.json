@@ -9,27 +9,27 @@
     "id": "statements",
     "tasks": [{
         "id": "1",
-        "title": "First Task"
+        "title": "You can take only one drink from basket!"
       }, 
       {
         "id": "2",
-        "title": "Second Task"
+        "title": "You can walk everywhere!"
       },
       {
         "id": "1",
-        "title": "Fourth Task"
+        "title": "Smoking is prohibited!"
       },
       {
         "id": "2",
-        "title": "Third Task"
+        "title": "You don't need exit code!"
       },
       {
         "id": "1",
-        "title": "Fifth Task"
+        "title": "You must wear Safety shoes!"
       },
       {
         "id": "2",
-        "title": "Sixth Task"
+        "title": "You can take any trailer you want"
       }
     ]
   },

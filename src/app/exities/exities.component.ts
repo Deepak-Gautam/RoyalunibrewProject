@@ -30,6 +30,9 @@ export class ExitiesComponent implements OnInit {
   add() {
     this.router.navigate(['exit']);
   }
+ myFunction() {
+  window.print();
+}
 
 }
 
