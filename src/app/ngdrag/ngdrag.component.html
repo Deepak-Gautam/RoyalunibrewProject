@@ -1,21 +1,18 @@
-<div class="container board">
+<div class="board row-btn">
+  <div class="card-list mat-elevation-z1" *ngFor="let track of tracks">
 
-    <div class="card-list mat-elevation-z1" *ngFor="let track of tracks">
-  
-      <h2 class="mat-h2 text-center">{{track.title}}</h2>
-  
-      <div class="card-list-content" cdkDropList [id]="track.id" [cdkDropListData]="track.tasks"
-        [cdkDropListConnectedTo]="trackIds" (cdkDropListDropped)="onTalkDrop($event)">  
-  
-          <mat-card *ngFor="let task of track.tasks" [cdkDragData]="track.tasks.id" cdkDrag>
+    <h3 class="mat-h3 text-center">{{track.title}}</h3>
 
-            <mat-card-content>
-                {{task.title}}
-            </mat-card-content>
-          </mat-card>
-  
-      </div>
-  
+    <div class="card-list-content" cdkDropList [id]="track.id" [cdkDropListData]="track.tasks"
+      [cdkDropListConnectedTo]="trackIds" (cdkDropListDropped)="onTalkDrop($event)">
+
+      <mat-card *ngFor="let task of track.tasks" [cdkDragData]="track.tasks.id" cdkDrag>
+
+        <mat-card-content>
+          {{task.title}}
+        </mat-card-content>
+      </mat-card>
+
     </div>
-  
   </div>
+</div>
