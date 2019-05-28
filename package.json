@@ -25,6 +25,7 @@
     "angular-draggable-droppable": "^4.3.0",
     "angular-svg-icon": "^7.2.1",
     "angularfire2": "^5.1.3",
+    "compodoc": "0.0.41",
     "core-js": "^2.6.7",
     "firebase": "^6.0.2",
     "jquery": "^3.4.1",
