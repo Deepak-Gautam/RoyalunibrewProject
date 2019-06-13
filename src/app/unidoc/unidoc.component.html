@@ -1,15 +1,17 @@
 <div class="container">
   <div class="checkit">
     <div class="col-12">
-      About
-      <input type="checkbox" ng-model="myVar1" ng-init="myVar1 = true">
-      When you are here!
-      <input type="checkbox" ng-model="myVar" ng-init="myVar = true">
-      Important to have!
-      <input type="checkbox" ng-model="myVar2" ng-init="myVar2 = true">
+      <h6>About</h6>
+      <input type="checkbox" ng-model="myVar1" ng-init="myVar1">
+      <h6>When you are here!</h6>
+      <input type="checkbox" ng-model="myVar" ng-init="myVar">
+      <h6>Important to have!</h6>
+      <input type="checkbox" ng-model="myVar2" ng-init="myVar2">
+      <h6>Watch Video!</h6>
+      <input type="checkbox" ng-model="video" ng-init="video = true">
     </div>
   </div>
-  <div class="container">
+  <div class="container" ng-if="video">
     <div class="row">
       <div class="col-12">
           <iframe style="width:100%; height:300px;"
