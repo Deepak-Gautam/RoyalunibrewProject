@@ -67,7 +67,7 @@ export class EntryLogsComponent implements OnInit {
         DateTime: this.entry.DateTime
       });
     } else {
-      this.afs.collection('entrylogs').doc('1').set({
+      this.afs.collection('entrylogs').add({
         LicenseNumber: this.entry.LicenseNumber,
         TrailerNumber: this.entry.TrailerNumber,
         Name: this.entry.Name,
