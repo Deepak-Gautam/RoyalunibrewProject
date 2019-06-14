@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="templatesTitle" datatype="html">
+        <source>Choose Language </source>
+        <target>Vælg sprog </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/flags/flags.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle12" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{title}}"/></source>
+         <target>Indtast dine oplysninger </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle13" datatype="html">
+        <source>License Number</source>
+         <target>Licens nummer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle14" datatype="html">
+        <source>LicenseNumber is required</source>
+ <target>licens nummer er påkrævet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle15" datatype="html">
+        <source>Trailer Number</source>
+          <target>Trailer nummer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle16" datatype="html">
+        <source> TrailerNumber is required</source>
+        <target> Trailer nummer er påkrævet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle17" datatype="html">
+        <source>Name</source>
+         <target>Navn</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle18" datatype="html">
+        <source>   Name is required</source>
+        <target>  navn er påkrævet</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle19" datatype="html">
+        <source>Company Name</source>
+        <target>Firmanavn</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle20" datatype="html">
+        <source>
+            Company Name is required</source>
+             <target>
+           Firmanavn er påkrævet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle21" datatype="html">
+        <source>Destination</source>
+          <target>Bestemmelsessted</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle22" datatype="html">
+        <source>
+            Destination is required</source>
+             <target>
+           destination er påkrævet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle23" datatype="html">
+        <source>Arrival Time</source>
+          <target>ankomsttid</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle24" datatype="html">
+        <source>
+              Destination is required</source>
+              <target>
+             ankomst er påkrævet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle25" datatype="html">
+        <source>Save Your Information</source>
+        <target>gem dine oplysninger</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entry-logs/entry-logs.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle91" datatype="html">
+        <source>Please Confirm Your Information</source>
+         <target>Bekræft venligst dine oplysninger</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entries/entries.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exities/exities.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle4" datatype="html">
+        <source>License Number</source>
+         <target>Licens nummer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entries/entries.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle5" datatype="html">
+        <source>TrailerNumber</source>
+         <target>Trailer nummer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entries/entries.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle6" datatype="html">
+        <source>Name</source>
+        <target>Navn</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entries/entries.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle7" datatype="html">
+        <source>CompanyName</source>
+        <target>Firmanavn</target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entries/entries.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle8" datatype="html">
+        <source>Destination</source>
+         <target>Bestemmelsessted</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entries/entries.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle9" datatype="html">
+        <source>DateTime</source>
+         <target>Dato tid</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entries/entries.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle10" datatype="html">
+        <source>Edit</source>
+        <target>redigere</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entries/entries.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle11" datatype="html">
+        <source>Print me</source>
+         <target>udskrive mig</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/entries/entries.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templates" datatype="html">
+        <source>hi</source>
+         <target>hi</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle57" datatype="html">
+        <source>About</source>
+         <target>Om</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle58" datatype="html">
+        <source>Play Quiz</source>
+         <target>Spil quiz</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle59" datatype="html">
+        <source>Drag &amp; Drop</source>
+         <target>Træk  Dråbe</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle40" datatype="html">
+        <source>Documentation</source>
+         <target>Dokumentation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/navbar/navbar.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesinstru" datatype="html">
+        <source>Please Read Instruction Before Preceeding</source>
+         <target>Læs venligst instruktioner før forudgående</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/instructions/instructions.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle52" datatype="html">
+        <source>Use Safety Shoes</source>
+         <target>Brug sikkerhedssko</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/instructions/instructions.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle53" datatype="html">
+        <source>No Smoking</source>
+         <target>Rygning forbudt</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/instructions/instructions.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle54" datatype="html">
+        <source>Walk In Between Lines</source>
+         <target>Gå ind mellem linjer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/instructions/instructions.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle55" datatype="html">
+        <source>Use Trash Cans</source>
+         <target>Brug skraldespand</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/instructions/instructions.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesarridep" datatype="html">
+        <source>Choose One Please</source>
+         <target>Vælg en venligst</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/selection/selection.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle2" datatype="html">
+        <source>Check-In</source>
+         <target>Check ind</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/selection/selection.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle3" datatype="html">
+        <source>Check-Out</source>
+         <target>Check ud</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/selection/selection.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle26" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{title}}"/></source>
+          <target>Indtast dine oplysninger</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle27" datatype="html">
+        <source>License Number</source>
+         <target>Licens nummer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle28" datatype="html">
+        <source>
+            LicenseNumber is required</source>
+             <target>Licensnummer er påkrævet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle29" datatype="html">
+        <source>Trailer Number</source>
+         <target>Trailer nummer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle30" datatype="html">
+        <source>
+            TrailerNumber is required</source>
+             <target>Trailer nummer er påkrævet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle31" datatype="html">
+        <source>Name</source>
+         <target>Navn</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle32" datatype="html">
+        <source>
+            Name is required</source>
+             <target>Navn er påkrævet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle33" datatype="html">
+        <source>Company Name</source>
+         <target>firmanavn</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle34" datatype="html">
+        <source>
+            Company Name is required</source>
+             <target>Firmanavn er påkrævet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle35" datatype="html">
+        <target>Bestemmelsessted</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle36" datatype="html">
+        <source>
+            Destination is required</source>
+             <target>Bestemmelsessted er påkrævet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle37" datatype="html">
+        <source>Arrival Time</source>
+         <target>Ankomsttid</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle38" datatype="html">
+        <source>
+            Destination is required</source>
+             <target>Ankomsttid er påkrævet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle39" datatype="html">
+        <source>Order Number</source>
+         <target>Ordrenummer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle41" datatype="html">
+        <source>Enter Your Information</source>
+         <target>Indtast dine oplysninger</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exit-logs/exit-logs.component.html</context>
+          <context context-type="linenumber">64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle42" datatype="html">
+        <source>License Number</source>
+         <target>Licens nummer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exities/exities.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle43" datatype="html">
+        <source>TrailerNumber</source>
+         <target>Trailer nummer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exities/exities.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle44" datatype="html">
+        <source>Name</source>
+         <target>Navn</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exities/exities.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle45" datatype="html">
+        <source>CompanyName</source>
+         <target>Firmanavn</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exities/exities.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle46" datatype="html">
+        <source>Destination</source>
+         <target>Bestemmelsessted</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exities/exities.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle47" datatype="html">
+        <source>DateTime</source>
+         <target>Dato tid</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exities/exities.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle48" datatype="html">
+        <source>Order Number</source>
+         <target>Ordrenummer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exities/exities.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle49" datatype="html">
+        <source>Exit Code</source>
+         <target>Afgangskode</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exities/exities.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle50" datatype="html">
+        <source>Edit</source>
+         <target>Afslut</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exities/exities.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle51" datatype="html">
+        <source>Print me</source>
+         <target>Udskriv mig</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/exities/exities.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle63" datatype="html">
+        <source>Can you answer the following?</source>
+         <target>Kan du svare på følgende</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/quiz/quiz.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle64" datatype="html">
+        <source>Next Question</source>
+         <target>Næste spørgsmål</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/quiz/quiz.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle60" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{track.title}}"/></source>
+          <target><x id="INTERPOLATION" equiv-text="{{track.title}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/ngdrag/ngdrag.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle61" datatype="html">
+        <source>
+          <x id="INTERPOLATION" equiv-text="{{task.title}}"/>
+        </source>
+         <target><x id="INTERPOLATION" equiv-text="{{task.title}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/ngdrag/ngdrag.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle75" datatype="html">
+        <source>ROYAL UNIBREW</source>
+         <target>ROYAL UNIBREW</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/unidoc/unidoc.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle76" datatype="html">
+        <source>Royal Unibrew is a leading beverage provider in a number of markets -primarily in Northern Europe, Italy,
+      France
+      and in the international malt beverage markets.</source>
+       <target>Royal Unibrew is a leading beverage provider in a number of markets -primarily in Northern Europe, Italy, France
+      and in the international malt beverage markets.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/unidoc/unidoc.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle77" datatype="html">
+        <source>It is located in Faxe Alle 1, DK-4640 Faxe and you can contact at contact@royalunibrew.com</source>
+        <target>Det er placeret i Faxe Alle 1, 4640 Faxe, og du kan kontakte på contact@royalunibrew.com</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/unidoc/unidoc.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle78" datatype="html">
+        <source>When you are here!</source>
+         <target>Når du er her</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/unidoc/unidoc.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle93" datatype="html">
+        <source>Everytime when you visit Royal Unibrew, it is most important that you have to wear your safety shoes. Also, you
+      have to follow some other safety instructions like walking inbetween the safety lines</source>
+       <target>Hver gang du besøger Royal Unibrew, er det vigtigt at du bærer dine sikkerhedssko. Også dig
+      skal følge nogle andre sikkerhedsinstruktioner som at gå ind mellem sikkerhedslinjerne</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/unidoc/unidoc.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle79" datatype="html">
+        <source>As a complementary gift you can have only one drinks from the container near the office. </source>
+         <target>Som en komplementær gave kan du kun have en drink fra containeren i nærheden af ​​kontoret.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/unidoc/unidoc.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle80" datatype="html">
+        <source>Important to have</source>
+         <target>Betydningen at have</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/unidoc/unidoc.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle81" datatype="html">
+        <source>As a driver you must have your transport number and you must fill your exit form before you leave the Royal Unibrew. You can get your exit code for leaving Royal Unibrew only after you fill up exit form ehich is most important. </source>
+       <target>om chauffør skal du have dit transportnummer, og du skal udfylde din exit form, inden du forlader Royal Unibrew. Du kan få din exit kode for at forlade Royal Unibrew først, når du har udfyldt exit form, som er vigtigst.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/unidoc/unidoc.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="templatesTitle82" datatype="html">
+       
+        <source>You can enjoy the visit in Royal Unibrew</source>
+         <target>Du kan nyde besøget i Royal Unibrew</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/unidoc/unidoc.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

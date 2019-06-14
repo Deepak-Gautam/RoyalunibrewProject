@@ -1,25 +1,25 @@
 <div class="container">
-    <h1>Please Confirm Your Information</h1>
+    <h1 i18n="@@templatesTitle91" >Please Confirm Your Information</h1>
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th>License Number</th>
-          <th>TrailerNumber</th>
-          <th>Name</th>
-          <th>CompanyName</th>
-          <th>Destination</th>
-          <th>DateTime</th>
-          <th>Edit</th>
+          <th i18n="@@templatesTitle4" >License Number</th>
+          <th i18n="@@templatesTitle5" >TrailerNumber</th>
+          <th i18n="@@templatesTitle6">Name</th>
+          <th i18n="@@templatesTitle7" >CompanyName</th>
+          <th i18n="@@templatesTitle8" >Destination</th>
+          <th i18n="@@templatesTitle9" >DateTime</th>
+          <th i18n="@@templatesTitle10">Edit</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor= "let entry of entries | async ">
-          <td>{{entry.data.LicenseNumber}}</td>
-          <td>{{entry.data.TrailerNumber}}</td>
+          <td >{{entry.data.LicenseNumber}}</td>
+          <td >{{entry.data.TrailerNumber}}</td>
           <td>{{entry.data.Name}}</td>
           <td>{{entry.data.CompanyName}}</td>
-          <td>{{entry.data.Destination}}</td>
-          <td>{{entry.data.DateTime}}</td>
+          <td >{{entry.data.Destination}}</td>
+          <td >{{entry.data.DateTime}}</td>
           <td>
             <a [routerLink] = "['/entry', entry.id]">
               <i class="far fa-edit"></i>
@@ -33,5 +33,5 @@
         </tr>
       </tbody>
     </table>
-    <button (click)="myFunction()">Print me</button>  
+    <button i18n="@@templatesTitle11" (click)="myFunction()">Print me</button>  
     </div>

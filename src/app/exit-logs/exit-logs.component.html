@@ -9,59 +9,59 @@
   </div>
   <div class="col-8 m-auto ">
     <div class="container formstyle">
-      <h1>{{title}}</h1>
+      <h1 i18n="@@templatesTitle26" >{{title}}</h1>
       <br />
       <form [formGroup]="form" (ngSubmit)="submit()">
         <div class="form-group">
-          <label for="LicenseNumber">License Number</label>
+          <label i18n="@@templatesTitle27" for="LicenseNumber">License Number</label>
           <input [(ngModel)]="exit.LicenseNumber" type="text" class="form-control" formControlName="LicenseNumber">
-          <div *ngIf=" form.controls.LicenseNumber.touched && !form.controls.LicenseNumber.valid"
+          <div i18n="@@templatesTitle28" *ngIf=" form.controls.LicenseNumber.touched && !form.controls.LicenseNumber.valid"
             class="alert alert-danger">
             LicenseNumber is required</div>
         </div>
         <div class="form-group">
-          <label for="TrailerNumber">Trailer Number</label>
+          <label i18n="@@templatesTitle29" for="TrailerNumber">Trailer Number</label>
           <input [(ngModel)]="exit.TrailerNumber" type="text" class="form-control" formControlName="TrailerNumber">
-          <div *ngIf=" form.controls.TrailerNumber.touched && !form.controls.TrailerNumber.valid"
+          <div i18n="@@templatesTitle30" *ngIf=" form.controls.TrailerNumber.touched && !form.controls.TrailerNumber.valid"
             class="alert alert-danger">
             TrailerNumber is required</div>
         </div>
         <div class="form-group">
-          <label for="Name">Name</label>
+          <label i18n="@@templatesTitle31" for="Name">Name</label>
           <input [(ngModel)]="exit.Name" type="text" class="form-control" formControlName="Name">
-          <div *ngIf=" form.controls.Name.touched && !form.controls.Name.valid" class="alert alert-danger">
+          <div i18n="@@templatesTitle32" *ngIf=" form.controls.Name.touched && !form.controls.Name.valid" class="alert alert-danger">
             Name is required</div>
         </div>
         <div class="form-group">
-          <label for="CompanyName">Company Name</label>
+          <label i18n="@@templatesTitle33" for="CompanyName">Company Name</label>
           <input [(ngModel)]="exit.CompanyName" type="text" class="form-control" formControlName="CompanyName">
-          <div *ngIf=" form.controls.CompanyName.touched && !form.controls.CompanyName.valid"
+          <div i18n="@@templatesTitle34" *ngIf=" form.controls.CompanyName.touched && !form.controls.CompanyName.valid"
             class="alert alert-danger">
             Company Name is required</div>
         </div>
 
         <div class="form-group">
-          <label for="Destination">Destination</label>
+          <label i18n="@@templatesTitle35" for="Destination">Destination</label>
           <input [(ngModel)]="exit.Destination" type="text" class="form-control" formControlName="TrailerNumber">
-          <div *ngIf=" form.controls.Destination.touched && !form.controls.Destination.valid"
+          <div i18n="@@templatesTitle36" *ngIf=" form.controls.Destination.touched && !form.controls.Destination.valid"
             class="alert alert-danger">
             Destination is required</div>
         </div>
         <div class="form-group">
-          <label for="DateTime">Arrival Time</label>
+          <label i18n="@@templatesTitle37" for="DateTime">Arrival Time</label>
           <input [(ngModel)]="exit.DateTime" type="text" class="form-control" formControlName="DateTime">
-          <div *ngIf=" form.controls.DateTime.touched && !form.controls.DateTime.valid" class="alert alert-danger">
+          <div i18n="@@templatesTitle38" *ngIf=" form.controls.DateTime.touched && !form.controls.DateTime.valid" class="alert alert-danger">
             Destination is required</div>
         </div>
         <div class="cdk-droppable">
           <div class="form-group">
-            <label for="ordernumber">Order Number</label>
+            <label i18n="@@templatesTitle39" for="ordernumber">Order Number</label>
             <input [(ngModel)]="exit.ordernumber" type="text" class="form-control" formControlName="DateTime">
-            <div *ngIf=" form.controls.ordernumber.touched && !form.controls.DateTime.valid" class="alert alert-danger">
+            <div i18n="@@templatesTitle40" *ngIf=" form.controls.ordernumber.touched && !form.controls.DateTime.valid" class="alert alert-danger">
               Order Number is required</div>
           </div>
         </div>
-        <button class="btn btn-primary unibutton" type="submit">{{title}}</button>
+        <button i18n="@@templatesTitle41" class="btn btn-primary unibutton" type="submit">Enter Your Information</button>
       </form>
     </div>
   </div>
