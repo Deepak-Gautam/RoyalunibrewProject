@@ -1,0 +1,47 @@
+#form-signin {   
+    background-color: darkslategrey;
+    width: 30%;
+    height: 50vh;
+    padding: 2%;
+    text-align: center;
+    align-content: center;
+    margin-top: 5%;
+}
+
+    input[type="text"] {
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        height: 47px;
+        
+        
+     }
+     input[type="password"] {
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+        height: 47px;
+       
+      }
+      .alert-danger {
+        color: #a94442;
+        background-color: #f2dede;
+        border-color: #ebccd1;
+        width: 80%;
+        margin-left: 10%;
+    }
+    h2{       
+        color: wheat;
+    }
+    label{
+        font-size: 2rem;
+        font-family: inherit;
+        padding: 2%;
+        color: wheat;
+    }
+    button {
+        margin-top: 4%;
+        width: 40%;
+        height: 47px;
+       
+    }

@@ -23,6 +23,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { NgdragComponent } from './ngdrag/ngdrag.component';
 import { MatCardModule } from '@angular/material';
 import { UnidocComponent } from './unidoc/unidoc.component';
+import {LoginComponent} from './login/login.component';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 // import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
 @NgModule({
   declarations: [
@@ -38,6 +40,7 @@ import { UnidocComponent } from './unidoc/unidoc.component';
     QuizComponent,
     NgdragComponent,
     UnidocComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import { UnidocComponent } from './unidoc/unidoc.component';
     FormsModule,
     ReactiveFormsModule,
     DragDropModule,
-    MatCardModule
+    MatCardModule,
+    AngularFireAuthModule,
     // MatDatepickerModule, MatInputModule,MatNativeDateModule,
   ],
   providers: [],
