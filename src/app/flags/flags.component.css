@@ -8,3 +8,9 @@ h1{
     text-align: center;
 }
 
+.flags{
+    cursor: pointer;
+}
+.flags:hover img{
+    opacity: 0.7;
+}

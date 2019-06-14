@@ -45,7 +45,7 @@ export class ExitLogsComponent implements OnInit {
       this.id = params.id;
     });
     if (!this.id) {
-      this.title = 'Enter Your Information';
+      this.title = 'demo.text16';
     } else {
       this.title = 'Edit Information';
       this.entryDoc = this.afs.doc('exitlogs/' + this.id);
