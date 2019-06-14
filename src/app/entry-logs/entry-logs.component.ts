@@ -74,7 +74,7 @@ export class EntryLogsComponent implements OnInit {
         CompanyName: this.entry.CompanyName,
         Destination: this.entry.Destination,
         DateTime: this.entry.DateTime
-      // }).then(ref => {ref.set({key: ref.id}, {merge: true});
+      }).then(ref => {ref.set({key: ref.id}, {merge: true});
     });
 
   }
