@@ -1,0 +1,30 @@
+{
+  "demo": {
+    "validations": {
+      "val1": "License Number is required",
+      "val2": "Trailer Number is required",
+      "val3": "Name is required",
+      "val4": "Company Name is required",
+      "val5": "Destination is required",
+      "val6": "Arrival Time is required",
+      "val7": "Order Number is required"
+    },
+    "text1": "Please Select Language",
+    "text2": "Please Read Instructions Before Preceeding",
+    "text3": "Use Safety Shoes",
+    "text4": "No Smoking",
+    "text5": "Walk In Between Lines",
+    "text6": "Use Trash Cans",
+    "text7": "Check-In",
+    "text8": "Check-Out",
+    "text9": "License Number",
+    "text10": "Trailer Number",
+    "text11": "Name",
+    "text12": "Company Name",
+    "text13": "Destination",
+    "text14": "Arrival Time",
+    "text15": "Order Number",
+    "text16": "Enter your information",
+    "text17": ""
+  }
+}

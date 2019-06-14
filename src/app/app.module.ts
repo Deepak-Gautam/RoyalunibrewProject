@@ -7,7 +7,7 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlagsComponent } from './flags/flags.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { EntryLogsComponent } from './entry-logs/entry-logs.component';
 import { FormsModule } from '@angular/forms';
@@ -27,6 +27,10 @@ import {LoginComponent} from './login/login.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { EntryExitListComponent } from './entry-exit-list/entry-exit-list.component';
 // import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
+
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,6 +55,13 @@ import { EntryExitListComponent } from './entry-exit-list/entry-exit-list.compon
     AngularFirestoreModule,
     AngularFireStorageModule,
     HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+      }
+  }),
     AngularSvgIconModule,
     FormsModule,
     ReactiveFormsModule,
@@ -63,3 +74,8 @@ import { EntryExitListComponent } from './entry-exit-list/entry-exit-list.compon
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

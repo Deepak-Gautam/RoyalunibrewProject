@@ -41,7 +41,7 @@ export class EntryLogsComponent implements OnInit {
       this.id = params.id;
     });
     if (!this.id) {
-      this.title = 'Save Your Information';
+      this.title = 'demo.text16';
     } else {
       this.title = 'Edit Information';
       this.entryDoc = this.afs.doc('entrylogs/' + this.id);

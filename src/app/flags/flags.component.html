@@ -1,4 +1,4 @@
-<h1>Please Select Language </h1>
+<h1 translate>demo.text1</h1>
 <div class="row row-btn">
   <div class="col-2 m-auto">
     <a class="nav-btn m-auto" aria-disabled="" title="Back">
@@ -12,7 +12,7 @@
     <div class="container">
       <div class="row">
         <div class="col-6 text-center" *ngFor="let flag of flags | async">
-          <a routerLink="/instructions">
+          <a class="flags" (click)="useLanguage(flag.name)">
             <img src="{{flag.imageUrl}}" alt="Flags for Languages">
             <h2 class="caption">{{flag.name}}</h2>
           </a>
