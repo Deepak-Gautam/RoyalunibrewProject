@@ -25,6 +25,7 @@ import { MatCardModule } from '@angular/material';
 import { UnidocComponent } from './unidoc/unidoc.component';
 import {LoginComponent} from './login/login.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { EntryExitListComponent } from './entry-exit-list/entry-exit-list.component';
 // import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
     QuizComponent,
     NgdragComponent,
     UnidocComponent,
-    LoginComponent
+    LoginComponent,
+    EntryExitListComponent
   ],
   imports: [
     BrowserModule,

@@ -20,7 +20,7 @@ login(username, password) {
     return this.afAuth.auth.signInWithEmailAndPassword(username, password).then(authState => {
       console.log('Login-then' , authState );
       this.loggedIn.next(true);
-      this.router.navigate(['/entries']);
+      this.router.navigate(['/list']);
     })
     .catch(
       error => {

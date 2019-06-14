@@ -73,7 +73,7 @@ export class ExitLogsComponent implements OnInit {
         ordernumber: this.exit.ordernumber
       });
     } else {
-      this.afs.collection('exitlogs').doc('1').set({
+      this.afs.collection('exitlogs').add({
         LicenseNumber: this.exit.LicenseNumber,
         TrailerNumber: this.exit.TrailerNumber,
         Name: this.exit.Name,
