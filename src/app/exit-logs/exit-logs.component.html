@@ -7,7 +7,7 @@
       </svg>
     </a>
   </div>
-  <div class="col-8 m-auto ">
+  <div class="col-10 m-auto ">
     <div class="container formstyle">
       <h1 translate>{{title}}</h1>
       <br />
@@ -49,7 +49,7 @@
         </div>
         <div class="form-group">
           <label for="DateTime" translate>demo.text14</label>
-          <input [(ngModel)]="exit.DateTime" type="text" class="form-control" formControlName="DateTime">
+          <input [(ngModel)]="exit.DateTime" type="time" class="form-control" formControlName="DateTime">
           <div *ngIf=" form.controls.DateTime.touched && !form.controls.DateTime.valid" class="alert alert-danger"
             translate>
             demo.validations.val6</div>
@@ -62,16 +62,15 @@
               demo.validations.val7</div>
           </div>
         </div>
-        <button class="btn btn-primary unibutton" type="submit" translate>{{title}}</button>
+        <!-- <button class="btn btn-primary unibutton" type="submit" translate>{{title}}</button> -->
+          <button class="nav-btn m-auto subbutton" type="submit">
+            <svg id="i-chevron-right" viewBox="0 0 32 32" width="60" height="100%" fill="none" stroke="currentcolor"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+              <path d="M12 30 L24 16 12 2"></path>
+            </svg>
+          </button>
       </form>
     </div>
   </div>
-  <div class="col-2 m-auto">
-    <a class="nav-btn m-auto" aria-disabled title="Next">
-      <svg id="i-chevron-right" viewBox="0 0 32 32" width="60" height="100%" fill="none" stroke="currentcolor"
-        stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-        <path d="M12 30 L24 16 12 2"></path>
-      </svg>
-    </a>
-  </div>
+  
 </div>
