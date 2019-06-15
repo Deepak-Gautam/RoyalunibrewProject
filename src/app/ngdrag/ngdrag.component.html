@@ -1,17 +1,17 @@
-
 <div class="board row-btn">
   <div class="card-list mat-elevation-z1" *ngFor="let track of tracks">
 
     <h3 class="mat-h3 text-center">{{track.title}}</h3>
 
     <div class="card-list-content" cdkDropList [id]="track.id" [cdkDropListData]="track.tasks"
-      [cdkDropListConnectedTo]="trackIds" (cdkDropListDropped)="onTalkDrop($event)">
+      [cdkDropListConnectedTo]="trackIds" (cdkDropListDropped)="onTaskDrop($event)">
 
-      <mat-card *ngFor="let task of track.tasks" [cdkDragData]="track.tasks.id" cdkDrag>
+      <mat-card *ngFor="let task of track.tasks" [id]="task.id" cdkDrag>
 
         <mat-card-content>
           {{task.title}}
         </mat-card-content>
+
       </mat-card>
 
     </div>
