@@ -26,10 +26,9 @@ import { UnidocComponent } from './unidoc/unidoc.component';
 import { LoginComponent } from './login/login.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { EntryExitListComponent } from './entry-exit-list/entry-exit-list.component';
-// import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
-
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { OrderModule } from 'ngx-order-pipe';
 
 @NgModule({
   declarations: [
@@ -68,8 +67,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     DragDropModule,
     MatCardModule,
     AngularFireAuthModule,
-    // MatDatepickerModule, MatInputModule,MatNativeDateModule,
-  ],
+    OrderModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

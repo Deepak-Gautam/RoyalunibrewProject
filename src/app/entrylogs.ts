@@ -6,6 +6,6 @@ TrailerNumber: string;
 Name: string;
 CompanyName: string;
 Destination: string;
-DateTime: string;
+DateTime: number = Date.now();
 
 }

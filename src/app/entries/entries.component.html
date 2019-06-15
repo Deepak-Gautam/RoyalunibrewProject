@@ -1,37 +1,37 @@
 <div class="container">
-    <h1>Please Confirm Your Information</h1>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>License Number</th>
-          <th>TrailerNumber</th>
-          <th>Name</th>
-          <th>CompanyName</th>
-          <th>Destination</th>
-          <th>DateTime</th>
-          <th>Edit</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor= "let entry of entries | async ">
-          <td>{{entry.data.LicenseNumber}}</td>
-          <td>{{entry.data.TrailerNumber}}</td>
-          <td>{{entry.data.Name}}</td>
-          <td>{{entry.data.CompanyName}}</td>
-          <td>{{entry.data.Destination}}</td>
-          <td>{{entry.data.DateTime}}</td>
-          <td>
-            <a [routerLink] = "['/entry', entry.id]">
-              <i class="far fa-edit"></i>
-            </a>
-          </td>
-          <!-- <td>
+  <h1>Please Confirm Your Information</h1>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th translate>demo.text9</th>
+        <th translate>demo.text10</th>
+        <th translate>demo.text11</th>
+        <th translate>demo.text12</th>
+        <th translate>demo.text13</th>
+        <th translate>demo.text14</th> <!-- datetime -->
+        <th translate>Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entry of entries | async | orderBy : order:'case-insensitive' ">
+        <td>{{entry.data.LicenseNumber}}</td>
+        <td>{{entry.data.TrailerNumber}}</td>
+        <td>{{entry.data.Name}}</td>
+        <td>{{entry.data.CompanyName}}</td>
+        <td>{{entry.data.Destination}}</td>
+        <td>{{entry.data.DateTime | date:'medium'}}</td>
+        <td>
+          <a [routerLink]="['/entry', entry.id]">
+            <i class="far fa-edit"></i>
+          </a>
+        </td>
+        <!-- <td>
             <a>
               <i  (click)= "delete (user.id, user.data.name)" class= "glyphicon glyphicon-remove"></i>
             </a>
           </td> -->
-        </tr>
-      </tbody>
-    </table>
-    <button (click)="myFunction()">Print me</button>  
-    </div>
+      </tr>
+    </tbody>
+  </table>
+  <button (click)="myFunction()">Print me</button>
+</div>

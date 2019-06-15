@@ -33,6 +33,7 @@
     "jquery": "^3.4.1",
     "ng2-dnd": "^5.0.2",
     "ngx-embed-video": "^1.0.4",
+    "ngx-order-pipe": "^2.0.2",
     "npm-update": "^2.1.0",
     "rxjs": "^6.5.2",
     "tslib": "^1.9.3",
