@@ -15,13 +15,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let exit of exities | async ">
+      <tr *ngFor="let exit of exities | async | orderBy : order:'case-insensitive' ">
         <td>{{exit.data.LicenseNumber}}</td>
         <td>{{exit.data.TrailerNumber}}</td>
         <td>{{exit.data.Name}}</td>
         <td>{{exit.data.CompanyName}}</td>
         <td>{{exit.data.Destination}}</td>
-        <td>{{exit.data.DateTime}}</td>
+        <td>{{exit.data.DateTime | date:'medium'}}</td>
         <td>{{exit.data.ordernumber}}</td>
         <td>{{exit.data.randomnum}}</td>
         <td>

@@ -19,7 +19,7 @@ export class ExitLogsComponent implements OnInit {
   Name: string;
   CompanyName: string;
   Destination: string;
-  DateTime: string;
+  DateTime: number = Date.now();
   ordernumber: string;
   randomnum: number;
   form: FormGroup;
