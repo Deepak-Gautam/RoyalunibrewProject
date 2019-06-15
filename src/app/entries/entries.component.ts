@@ -1,5 +1,5 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
+import { Component, OnInit } from '@angular/core';
+import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/firestore';
 import { EntryLogs } from '../entrylogs';
 import { Router } from '@angular/router';
 import { map } from 'rxjs/operators';
@@ -7,16 +7,20 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-entries',
   templateUrl: './entries.component.html',
-  styleUrls: ['./entries.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  styleUrls: ['./entries.component.css']
 })
 
 export class EntriesComponent implements OnInit {
 
   entryCol: AngularFirestoreCollection<EntryLogs>;
   entries: any;
+  reverse = false;
+  order = 'data.DateTime';
 
-  constructor(private afs: AngularFirestore, private router: Router) { }
+  constructor(private afs: AngularFirestore, private router: Router) {
+    // this.sortedCollection = orderPipe.transform(this.entryCol, 'data.DateTime');
+    // console.log(this.sortedCollection);
+  }
 
   ngOnInit() {
     this.entryCol = this.afs.collection('entrylogs');

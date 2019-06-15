@@ -8,12 +8,12 @@
         <th translate>demo.text11</th>
         <th translate>demo.text12</th>
         <th translate>demo.text13</th>
-        <th translate>demo.text14</th>
+        <th translate>demo.text14</th> <!-- datetime -->
         <th translate>Edit</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let entry of entries | async ">
+      <tr *ngFor="let entry of entries | async | orderBy : order:'case-insensitive' ">
         <td>{{entry.data.LicenseNumber}}</td>
         <td>{{entry.data.TrailerNumber}}</td>
         <td>{{entry.data.Name}}</td>
