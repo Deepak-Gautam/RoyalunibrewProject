@@ -40,5 +40,17 @@ input {
      text-decoration: none !important;
  }
 .formstyle{
-    width: 65%;
+    width: 70%;
+}
+.subbutton{
+    position: absolute;
+    top: 162px;
+    right: 70px;
+}
+input[type=time]::-webkit-inner-spin-button, 
+input[type=time]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
 }
