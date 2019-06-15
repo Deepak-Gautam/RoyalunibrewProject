@@ -1,0 +1,32 @@
+{
+  "demo": {
+    "validations": {
+      "val1": "Licensnummer er påkrævet",
+      "val2": "Trailer nummer er påkrævet",
+      "val3": "Navn er påkrævet",
+      "val4": "Firmanavn er påkrævet",
+      "val5": "Destination er påkrævet",
+      "val6": "Ankomst Tid er påkrævet",
+      "val7": "Ordrenummer er påkrævet"
+    },
+    "text1": "Vælg sprog",
+    "text2": "Læs venligst instruktioner før du fortsætter",
+    "text3": "Brug sikkerhedssko",
+    "text4": "Ingen rygning",
+    "text5": "Gå i mellem linjer",
+    "text6": "Brug skraldespand",
+    "text7": "Check-Ind",
+    "text8": "Check-Ud",
+    "text9": "Licens nummer",
+    "text10": "Trailer nummer",
+    "text11": "Navn",
+    "text12": "Firmanavn",
+    "text13": "Destination",
+    "text14": "Ankomst Tid",
+    "text15": "Ordrenummer",
+    "text16": "Indtast dine oplysninger",
+    "text17": ""
+  }
+}
+
+

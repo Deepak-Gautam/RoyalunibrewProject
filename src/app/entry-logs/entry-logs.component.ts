@@ -41,7 +41,7 @@ export class EntryLogsComponent implements OnInit {
       this.id = params.id;
     });
     if (!this.id) {
-      this.title = 'Save Your Information';
+      this.title = 'demo.text16';
     } else {
       this.title = 'Edit Information';
       this.entryDoc = this.afs.doc('entrylogs/' + this.id);
@@ -67,14 +67,14 @@ export class EntryLogsComponent implements OnInit {
         DateTime: this.entry.DateTime
       });
     } else {
-      this.afs.collection('entrylogs').doc('1').set({
+      this.afs.collection('entrylogs').add({
         LicenseNumber: this.entry.LicenseNumber,
         TrailerNumber: this.entry.TrailerNumber,
         Name: this.entry.Name,
         CompanyName: this.entry.CompanyName,
         Destination: this.entry.Destination,
         DateTime: this.entry.DateTime
-      // }).then(ref => {ref.set({key: ref.id}, {merge: true});
+      }).then(ref => {ref.set({key: ref.id}, {merge: true});
     });
 
   }

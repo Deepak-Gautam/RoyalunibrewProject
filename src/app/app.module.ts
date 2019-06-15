@@ -7,7 +7,7 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FlagsComponent } from './flags/flags.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { EntryLogsComponent } from './entry-logs/entry-logs.component';
 import { FormsModule } from '@angular/forms';
@@ -23,7 +23,14 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { NgdragComponent } from './ngdrag/ngdrag.component';
 import { MatCardModule } from '@angular/material';
 import { UnidocComponent } from './unidoc/unidoc.component';
+import { LoginComponent } from './login/login.component';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { EntryExitListComponent } from './entry-exit-list/entry-exit-list.component';
 // import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
+
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,6 +45,8 @@ import { UnidocComponent } from './unidoc/unidoc.component';
     QuizComponent,
     NgdragComponent,
     UnidocComponent,
+    LoginComponent,
+    EntryExitListComponent
   ],
   imports: [
     BrowserModule,
@@ -46,14 +55,32 @@ import { UnidocComponent } from './unidoc/unidoc.component';
     AngularFirestoreModule,
     AngularFireStorageModule,
     HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    }),
     AngularSvgIconModule,
     FormsModule,
     ReactiveFormsModule,
     DragDropModule,
-    MatCardModule
+    MatCardModule,
+    AngularFireAuthModule,
     // MatDatepickerModule, MatInputModule,MatNativeDateModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(public translate: TranslateService) {
+    translate.setDefaultLang('English');
+  }
+
+}
+
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

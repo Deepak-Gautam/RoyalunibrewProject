@@ -45,7 +45,7 @@ export class ExitLogsComponent implements OnInit {
       this.id = params.id;
     });
     if (!this.id) {
-      this.title = 'Enter Your Information';
+      this.title = 'demo.text16';
     } else {
       this.title = 'Edit Information';
       this.entryDoc = this.afs.doc('exitlogs/' + this.id);
@@ -73,7 +73,7 @@ export class ExitLogsComponent implements OnInit {
         ordernumber: this.exit.ordernumber
       });
     } else {
-      this.afs.collection('exitlogs').doc('1').set({
+      this.afs.collection('exitlogs').add({
         LicenseNumber: this.exit.LicenseNumber,
         TrailerNumber: this.exit.TrailerNumber,
         Name: this.exit.Name,
