@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,7 @@ import { Location } from '@angular/common';
 })
 export class AppComponent {
   title = 'RoyalunibrewProject';
-  constructor(private location: Location) {
+  constructor(private location: Location, private translate: TranslateService) {
+    translate.setDefaultLang('en');
   }
 }
