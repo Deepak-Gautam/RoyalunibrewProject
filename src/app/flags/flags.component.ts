@@ -19,7 +19,6 @@ export class FlagsComponent implements OnInit {
   // flagsdoc: AngularFirestoreDocument<Flag>;
 
   constructor(private afs: AngularFirestore, private storage: AngularFireStorage, private translate: TranslateService) {
-    translate.setDefaultLang('en');
   }
 
   useLanguage(language: string) {
