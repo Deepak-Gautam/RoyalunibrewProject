@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { CdkDragDrop, transferArrayItem } from '@angular/cdk/drag-drop';
 import { Task, Track } from '../track.model';
-import { isNgTemplate } from '@angular/compiler';
 
 @Component({
   selector: 'app-ngdrag',
@@ -15,17 +14,17 @@ export class NgdragComponent implements OnInit {
     return this.tracks.map(track => track.id);
   }
 
-  onTalkDrop(event: CdkDragDrop<Task[]>) {
+  onTaskDrop(event: CdkDragDrop<Task[]>) {
     // if (event.previousContainer === event.container) {
     //   moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
-    if (event.previousContainer !== event.container) {
+
+    if (event.previousContainer !== event.container && event.container.id === event.item.element.nativeElement.id) {
       transferArrayItem(event.previousContainer.data,
         event.container.data,
         event.previousIndex,
         event.currentIndex);
     }
   }
-
   constructor() { }
 
   ngOnInit() {

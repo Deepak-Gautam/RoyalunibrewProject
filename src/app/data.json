@@ -8,27 +8,27 @@
     "title": "Statements",
     "id": "statements",
     "tasks": [{
-        "id": "1",
+        "id": "true",
         "title": "You can take only one drink from basket!"
       }, 
       {
-        "id": "2",
+        "id": "false",
         "title": "You can walk everywhere!"
       },
       {
-        "id": "1",
+        "id": "true",
         "title": "Smoking is prohibited!"
       },
       {
-        "id": "2",
+        "id": "false",
         "title": "You don't need exit code!"
       },
       {
-        "id": "1",
+        "id": "true",
         "title": "You must wear Safety shoes!"
       },
       {
-        "id": "2",
+        "id": "false",
         "title": "You can take any trailer you want"
       }
     ]
