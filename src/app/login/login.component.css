@@ -1,47 +1,61 @@
 #form-signin {   
-    background-color: #154f3e;
+    background-color: #ddd;
     width: 30%;
-    height: 50vh;
-    padding: 2%;
+    height: auto;
+    padding: 30px;
     text-align: center;
     align-content: center;
     margin-top: 5%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
     input[type="text"] {
-        text-align: center;
-        width: 80%;
-        margin-left: 10%;
-        height: 47px;
+        text-align: left;
+        width: 100%;
+        background-color: #eee;
         
         
      }
      input[type="password"] {
-        width: 80%;
-        text-align: center;
-        margin-left: 10%;
-        height: 47px;
+        width: 100%;
+        text-align: left;
+        background-color: #eee;
        
       }
       .alert-danger {
         color: #a94442;
         background-color: #f2dede;
         border-color: #ebccd1;
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
     }
     h2{       
-        color: wheat;
+        color: #000;
+        font-size: 28px;
     }
     label{
-        font-size: 2rem;
+        font-size: 18px;
         font-family: inherit;
-        padding: 2%;
-        color: wheat;
+        padding: 10px;
+        color: #000;
     }
     button {
         margin-top: 4%;
         width: 40%;
-        height: 47px;
        
     }
+    .form-group {
+        text-align: left;
+    }
+    .unibutton{
+        background-color: #154f3e;
+        border-color: #154f3e; 
+        margin: 20px 0px;
+     }
+     .btn:focus,.btn:active:focus,.btn.active:focus,
+ .btn.focus,.btn:active.focus,.btn.active.focus {
+     outline: none !important;
+     box-shadow: none !important;
+     background: #154f3e !important;
+     text-decoration: none !important;
+ }
