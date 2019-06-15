@@ -23,13 +23,13 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { NgdragComponent } from './ngdrag/ngdrag.component';
 import { MatCardModule } from '@angular/material';
 import { UnidocComponent } from './unidoc/unidoc.component';
-import {LoginComponent} from './login/login.component';
+import { LoginComponent } from './login/login.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { EntryExitListComponent } from './entry-exit-list/entry-exit-list.component';
 // import {MatDatepickerModule, MatInputModule,MatNativeDateModule} from '@angular/material';
 
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 @NgModule({
   declarations: [
@@ -57,11 +57,11 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
-          provide: TranslateLoader,
-          useFactory: HttpLoaderFactory,
-          deps: [HttpClient]
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
       }
-  }),
+    }),
     AngularSvgIconModule,
     FormsModule,
     ReactiveFormsModule,
@@ -73,7 +73,12 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(public translate: TranslateService) {
+    translate.setDefaultLang('English');
+  }
+
+}
 
 // required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient) {
