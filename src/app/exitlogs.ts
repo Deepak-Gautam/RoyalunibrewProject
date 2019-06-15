@@ -7,7 +7,7 @@ export class ExitLogs {
     Name: string;
     CompanyName: string;
     Destination: string;
-    DateTime: string;
+    DateTime: number = Date.now();
     ordernumber: string;
     randumnum: number;
 

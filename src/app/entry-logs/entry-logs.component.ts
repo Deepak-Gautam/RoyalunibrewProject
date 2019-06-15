@@ -18,7 +18,7 @@ export class EntryLogsComponent implements OnInit {
   Name: string;
   CompanyName: string;
   Destination: string;
-  DateTime: string;
+  DateTime: number = Date.now();
   form: FormGroup;
   entry = new EntryLogs();
   entryDoc: AngularFirestoreDocument<EntryLogs>;

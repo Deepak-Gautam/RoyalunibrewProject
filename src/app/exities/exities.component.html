@@ -3,19 +3,19 @@
   <table class="table table-bordered">
     <thead>
       <tr>
-        <th>License Number</th>
-        <th>TrailerNumber</th>
-        <th>Name</th>
-        <th>CompanyName</th>
-        <th>Destination</th>
-        <th>DateTime</th>
-        <th>Order Number</th>
-        <th>Exit Code</th>
-        <th>Edit</th>
+        <th translate>demo.text9</th>
+        <th translate>demo.text10</th>
+        <th translate>demo.text11</th>
+        <th translate>demo.text12</th>
+        <th translate>demo.text13</th>
+        <th translate>demo.text14</th>
+        <th translate>demo.text15</th>
+        <th translate>Exit Code</th>
+        <th translate>Edit</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor= "let exit of exities | async ">
+      <tr *ngFor="let exit of exities | async ">
         <td>{{exit.data.LicenseNumber}}</td>
         <td>{{exit.data.TrailerNumber}}</td>
         <td>{{exit.data.Name}}</td>
@@ -25,7 +25,7 @@
         <td>{{exit.data.ordernumber}}</td>
         <td>{{exit.data.randomnum}}</td>
         <td>
-          <a [routerLink] = "['/exit', exit.id]">
+          <a [routerLink]="['/exit', exit.id]">
             <i class="far fa-edit"></i>
           </a>
         </td>
@@ -38,5 +38,5 @@
     </tbody>
 
   </table>
-  <button (click)="myFunction()">Print me</button>  
+  <button (click)="myFunction()">Print me</button>
 </div>

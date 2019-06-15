@@ -1,31 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from 'angularfire2/firestore';
-import {EntryLogs} from '../entrylogs';
+import { EntryLogs } from '../entrylogs';
 import { Router } from '@angular/router';
-import {map} from 'rxjs/operators';
-
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-entries',
   templateUrl: './entries.component.html',
-  styleUrls: ['./entries.component.css']
+  styleUrls: ['./entries.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
+
 export class EntriesComponent implements OnInit {
 
   entryCol: AngularFirestoreCollection<EntryLogs>;
   entries: any;
+
   constructor(private afs: AngularFirestore, private router: Router) { }
 
   ngOnInit() {
     this.entryCol = this.afs.collection('entrylogs');
     this.entries = this.entryCol.snapshotChanges().pipe(
-    map(actions => {
-      return actions.map( a => {
-        const data = a.payload.doc.data() as EntryLogs ;
-        const id = a.payload.doc.id;
-        return{ id, data}  ;
-      });
-    })
+      map(actions => {
+        return actions.map(a => {
+          const data = a.payload.doc.data() as EntryLogs;
+          const id = a.payload.doc.id;
+          return { id, data };
+        });
+      })
     );
   }
   add() {
