@@ -18,8 +18,6 @@ export class EntriesComponent implements OnInit {
   order = 'data.DateTime';
 
   constructor(private afs: AngularFirestore, private router: Router) {
-    // this.sortedCollection = orderPipe.transform(this.entryCol, 'data.DateTime');
-    // console.log(this.sortedCollection);
   }
 
   ngOnInit() {

@@ -13,57 +13,57 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor= "let entry of entries | async ">
+      <tr *ngFor="let entry of entries | async | orderBy : order:'case-insensitive' ">
         <td>{{entry.data.LicenseNumber}}</td>
         <td>{{entry.data.TrailerNumber}}</td>
         <td>{{entry.data.Name}}</td>
         <td>{{entry.data.CompanyName}}</td>
         <td>{{entry.data.Destination}}</td>
-        <td>{{entry.data.DateTime}}</td>
+        <td>{{entry.data.DateTime | date:'medium'}}</td>
         <td>
-          <a [routerLink] = "['/entry', entry.id]">
+          <a [routerLink]="['/entry', entry.id]">
             <i class="far fa-edit"></i>
           </a>
         </td>
       </tr>
     </tbody>
   </table>
-  </div>
+</div>
 <!-- exit list -->
-  <div class="container">
-    <h1>List of Exities</h1>
-    <table class="table table-bordered">
-      <thead>
-        <tr>
-          <th>License Number</th>
-          <th>TrailerNumber</th>
-          <th>Name</th>
-          <th>CompanyName</th>
-          <th>Destination</th>
-          <th>DateTime</th>
-          <th>Order Number</th>
-          <th>Exit Code</th>
-          <th>Edit</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor= "let exit of exities | async ">
-          <td>{{exit.data.LicenseNumber}}</td>
-          <td>{{exit.data.TrailerNumber}}</td>
-          <td>{{exit.data.Name}}</td>
-          <td>{{exit.data.CompanyName}}</td>
-          <td>{{exit.data.Destination}}</td>
-          <td>{{exit.data.DateTime}}</td>
-          <td>{{exit.data.ordernumber}}</td>
-          <td>{{exit.data.randomnum}}</td>
-          <td>
-            <a [routerLink] = "['/exit', exit.id]">
-              <i class="far fa-edit"></i>
-            </a>
-          </td>
-        </tr>
-      </tbody>
-  
-    </table>
-  
-  </div>
+<div class="container">
+  <h1>List of Exities</h1>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>License Number</th>
+        <th>TrailerNumber</th>
+        <th>Name</th>
+        <th>CompanyName</th>
+        <th>Destination</th>
+        <th>DateTime</th>
+        <th>Order Number</th>
+        <th>Exit Code</th>
+        <th>Edit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let exit of exities | async | orderBy : order:'case-insensitive' ">
+        <td>{{exit.data.LicenseNumber}}</td>
+        <td>{{exit.data.TrailerNumber}}</td>
+        <td>{{exit.data.Name}}</td>
+        <td>{{exit.data.CompanyName}}</td>
+        <td>{{exit.data.Destination}}</td>
+        <td>{{exit.data.DateTime | date:'medium'}}</td>
+        <td>{{exit.data.ordernumber}}</td>
+        <td>{{exit.data.randomnum}}</td>
+        <td>
+          <a [routerLink]="['/exit', exit.id]">
+            <i class="far fa-edit"></i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+
+</div>

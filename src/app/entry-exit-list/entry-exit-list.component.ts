@@ -15,6 +15,8 @@ export class EntryExitListComponent implements OnInit {
   entries: any;
   exitCol: AngularFirestoreCollection<ExitLogs>;
   exities: any;
+  reverse = false;
+  order = 'data.DateTime';
   constructor(private afs: AngularFirestore, private router: Router) { }
 
   ngOnInit() {
