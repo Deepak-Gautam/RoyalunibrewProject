@@ -25,7 +25,7 @@ export class EntryLogsComponent implements OnInit {
   singleEntry: Observable<EntryLogs>;
 
   constructor(fb: FormBuilder, private afs: AngularFirestore,
-    private router: Router, private route: ActivatedRoute, private location: Location) {
+              private router: Router, private route: ActivatedRoute, private location: Location) {
     this.form = fb.group({
       LicenseNumber: ['', Validators.required],
       TrailerNumber: ['', Validators.required],
