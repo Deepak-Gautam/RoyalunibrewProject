@@ -3,7 +3,7 @@ import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/fires
 import { AngularFireStorage } from 'angularfire2/storage';
 import { TranslateService } from '@ngx-translate/core';
 
-interface Flag {
+class Flag {
   imageUrl: string;
   name: string;
 }
@@ -16,8 +16,8 @@ interface Flag {
 export class FlagsComponent implements OnInit {
   flagsCol: AngularFirestoreCollection<Flag>;
   flags: any;
-  // flagsdoc: AngularFirestoreDocument<Flag>;
-
+  entry = new Flag();
+  
   constructor(private afs: AngularFirestore, private storage: AngularFireStorage, private translate: TranslateService) {
   }
 
