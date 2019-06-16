@@ -14,16 +14,12 @@ export class EntriesComponent implements OnInit {
 
   entryCol: AngularFirestoreCollection<EntryLogs>;
   entries: any;
-  reverse = false;
-  order = 'data.DateTime';
 
   constructor(private afs: AngularFirestore, private router: Router) {
-    // this.sortedCollection = orderPipe.transform(this.entryCol, 'data.DateTime');
-    // console.log(this.sortedCollection);
   }
 
   ngOnInit() {
-    this.entryCol = this.afs.collection('entrylogs');
+    this.entryCol = this.afs.collection('entrylogs', ref => ref.orderBy('DateTime', 'desc').limit(1));
     this.entries = this.entryCol.snapshotChanges().pipe(
       map(actions => {
         return actions.map(a => {
