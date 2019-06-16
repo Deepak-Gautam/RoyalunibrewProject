@@ -15,12 +15,10 @@ export class EntryExitListComponent implements OnInit {
   entries: any;
   exitCol: AngularFirestoreCollection<ExitLogs>;
   exities: any;
-  reverse = false;
-  order = 'data.DateTime';
   constructor(private afs: AngularFirestore, private router: Router) { }
 
   ngOnInit() {
-    this.entryCol = this.afs.collection('entrylogs');
+    this.entryCol = this.afs.collection('entrylogs', ref => ref.orderBy('DateTime', 'desc'));
     this.entries = this.entryCol.snapshotChanges().pipe(
     map(actions => {
       return actions.map( a => {
@@ -30,8 +28,7 @@ export class EntryExitListComponent implements OnInit {
       });
     })
     );
-    this.exitCol = this.afs.collection('exitlogs');
-    // this.exitCol = this.afs.collection('exitlogs/');
+    this.exitCol = this.afs.collection('exitlogs', ref => ref.orderBy('DateTime', 'desc'));
     this.exities = this.exitCol.snapshotChanges().pipe(
       map(actions => {
         return actions.map(a => {

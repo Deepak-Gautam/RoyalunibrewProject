@@ -28,6 +28,3 @@ button:focus {
 button:hover {
   cursor: pointer;
 }
-
-tbody>tr:first-child{display:table-row !important;}
-tbody>tr {display: none;}
