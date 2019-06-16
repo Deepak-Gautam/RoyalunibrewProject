@@ -58,7 +58,7 @@ export class EntryLogsComponent implements OnInit {
   }
   submit() {
     if (this.id) {
-      this.afs.doc('entrylogs' + this.id).update({
+      this.afs.doc('entrylogs/' + this.id).update({
         LicenseNumber: this.entry.LicenseNumber,
         TrailerNumber: this.entry.TrailerNumber,
         Name: this.entry.Name,
@@ -74,7 +74,7 @@ export class EntryLogsComponent implements OnInit {
         CompanyName: this.entry.CompanyName,
         Destination: this.entry.Destination,
         DateTime: this.entry.DateTime
-      }).then(ref => {ref.set({key: ref.id}, {merge: true});
+      // .then(ref => {ref.set({key: ref.id}, {merge: true});
     });
 
   }
