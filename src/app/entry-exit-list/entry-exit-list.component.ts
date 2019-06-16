@@ -39,5 +39,14 @@ export class EntryExitListComponent implements OnInit {
       })
     );
   }
-
+  deleteentry(id) {
+    if (confirm( 'Are you sure you want to delete')) {
+      this.afs.collection('entrylogs').doc(id).delete();
+    }
+  }
+  deleteexit(id) {
+    if (confirm( 'Are you sure you want to delete')) {
+      this.afs.collection('exitlogs').doc(id).delete();
+    }
+  }
 }
