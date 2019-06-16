@@ -21,3 +21,6 @@ button:focus {outline:0;}
 button:hover {
     cursor: pointer;
 }
+
+tbody>tr:first-child{display:table-row !important;}
+tbody>tr {display: none;}
