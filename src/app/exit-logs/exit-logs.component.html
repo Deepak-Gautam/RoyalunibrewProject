@@ -47,18 +47,18 @@
             translate>
             demo.validations.val5</div>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="DateTime" translate>demo.text14</label>
           <input [(ngModel)]="exit.DateTime" type="time" class="form-control" formControlName="DateTime">
           <div *ngIf=" form.controls.DateTime.touched && !form.controls.DateTime.valid" class="alert alert-danger"
             translate>
             demo.validations.val6</div>
-        </div>
+        </div> -->
         <div class="cdk-droppable">
           <div class="form-group">
             <label for="ordernumber" translate>demo.text15</label>
-            <input [(ngModel)]="exit.ordernumber" type="text" class="form-control" formControlName="DateTime">
-            <div *ngIf=" form.controls.ordernumber.touched && !form.controls.DateTime.valid" class="alert alert-danger" translate>
+            <input [(ngModel)]="exit.ordernumber" type="text" class="form-control" formControlName="ordernumber">
+            <div *ngIf=" form.controls.ordernumber.touched && !form.controls.ordernumber.valid" class="alert alert-danger" translate>
               demo.validations.val7</div>
           </div>
         </div>

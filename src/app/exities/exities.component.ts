@@ -12,11 +12,13 @@ export class ExitiesComponent implements OnInit {
 
   exitCol: AngularFirestoreCollection<ExitLogs>;
   exities: any;
+  reverse = false;
+  order = 'data.DateTime';
+
   constructor(private afs: AngularFirestore, private router: Router) { }
 
   ngOnInit() {
     this.exitCol = this.afs.collection('exitlogs');
-    // this.exitCol = this.afs.collection('exitlogs/');
     this.exities = this.exitCol.snapshotChanges().pipe(
       map(actions => {
         return actions.map(a => {
