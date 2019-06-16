@@ -28,7 +28,7 @@ export class ExitLogsComponent implements OnInit {
   singleEntry: Observable<ExitLogs>;
 
   constructor(fb: FormBuilder, private afs: AngularFirestore,
-              private router: Router, private route: ActivatedRoute, private location: Location) {
+    private router: Router, private route: ActivatedRoute, private location: Location) {
     this.form = fb.group({
       LicenseNumber: ['', Validators.required],
       TrailerNumber: ['', Validators.required],
@@ -72,6 +72,7 @@ export class ExitLogsComponent implements OnInit {
         DateTime: this.exit.DateTime,
         ordernumber: this.exit.ordernumber
       });
+      this.location.back();
     } else {
       this.afs.collection('exitlogs').add({
         LicenseNumber: this.exit.LicenseNumber,
@@ -82,12 +83,10 @@ export class ExitLogsComponent implements OnInit {
         DateTime: this.exit.DateTime,
         ordernumber: this.exit.ordernumber,
         randomnum: (Math.floor((Math.random() * 10000) + 1000)),
-      // }).then(ref => {ref.set({key: ref.id}, {merge: true});
+        // }).then(ref => {ref.set({key: ref.id}, {merge: true});
       });
-
+      this.router.navigate(['/exities']);
     }
-    this.router.navigate(['/exities']);
-
   }
   // goBack(): void {
   //   this.location.back();

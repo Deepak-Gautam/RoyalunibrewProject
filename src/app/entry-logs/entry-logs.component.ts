@@ -4,7 +4,7 @@ import { AngularFirestore, AngularFirestoreDocument } from 'angularfire2/firesto
 import { Router, ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Location } from '@angular/common';
-import {EntryLogs} from '../entrylogs';
+import { EntryLogs } from '../entrylogs';
 @Component({
   selector: 'app-entry-logs',
   templateUrl: './entry-logs.component.html',
@@ -24,8 +24,8 @@ export class EntryLogsComponent implements OnInit {
   entryDoc: AngularFirestoreDocument<EntryLogs>;
   singleEntry: Observable<EntryLogs>;
 
-  constructor(fb: FormBuilder,  private afs: AngularFirestore,
-              private router: Router, private route: ActivatedRoute, private location: Location) {
+  constructor(fb: FormBuilder, private afs: AngularFirestore,
+    private router: Router, private route: ActivatedRoute, private location: Location) {
     this.form = fb.group({
       LicenseNumber: ['', Validators.required],
       TrailerNumber: ['', Validators.required],
@@ -66,6 +66,7 @@ export class EntryLogsComponent implements OnInit {
         Destination: this.entry.Destination,
         DateTime: this.entry.DateTime
       });
+      this.location.back();
     } else {
       this.afs.collection('entrylogs').add({
         LicenseNumber: this.entry.LicenseNumber,
@@ -74,11 +75,10 @@ export class EntryLogsComponent implements OnInit {
         CompanyName: this.entry.CompanyName,
         Destination: this.entry.Destination,
         DateTime: this.entry.DateTime
-      // .then(ref => {ref.set({key: ref.id}, {merge: true});
-    });
-
-  }
-    this.router.navigate(['/entries']);
+        // .then(ref => {ref.set({key: ref.id}, {merge: true});
+      });
+      this.router.navigate(['/entries']);
+    }
   }
   goBack(): void {
     this.location.back();
