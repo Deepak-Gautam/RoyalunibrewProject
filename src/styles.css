@@ -19,7 +19,7 @@ a:hover{
     width: 100%;
 }
 .row-btn {
-     height: calc(70vh - 115px); 
+     height: calc(100vh - 186px); 
 }
 .nav-btn {
     display: block;
