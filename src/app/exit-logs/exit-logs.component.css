@@ -1,4 +1,6 @@
-
+h1{
+    text-align: center;
+}
 input {
     padding: 15px;
     width: 100%;
@@ -44,7 +46,7 @@ input {
 }
 .subbutton{
     position: absolute;
-    top: 162px;
+    top: calc(50% - 86px);
     right: 70px;
 }
 input[type=time]::-webkit-inner-spin-button, 
