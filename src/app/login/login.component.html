@@ -1,10 +1,10 @@
 <section >
   <div class="container " id = "form-signin">
-    <h2>Login</h2>
+    <h2 translate>demo.text21</h2>
   <form [formGroup]="form" (ngSubmit)="login()">
     <div class="form-group">
        <label id="email" for="username">Email</label>
-       <input type="text" class="form-control" formControlName="username" placeholder="Email Address">
+       <input type="text" class="form-control" formControlName="username" placeholder="jondoe@gmail.com">
        <div *ngIf="form.controls.username.touched 
     && !form.controls.username.valid" class="alert alert-danger">
             Email is required
@@ -12,7 +12,7 @@
     </div>
     <div class="form-group">
     <label id="pass" for="password">Password</label>
-    <input type="password" class="form-control" formControlName="password" placeholder="Password">
+    <input type="password" class="form-control" formControlName="password" placeholder="**********">
     <div *ngIf="form.controls.password.touched && form.controls.password.errors">
         <div *ngIf="form.controls.password.errors.invalidLogin" 
   class="alert alert-danger">
@@ -32,7 +32,7 @@
     </div>     
   </div> 
    
-    <button class="btn btn-primary unibutton" type="submit" >LogIn</button>
+    <button class="btn btn-primary unibutton" type="submit" >Login</button>
   </form>
   </div>
   </section>

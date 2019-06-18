@@ -9,57 +9,63 @@
     </a>
   </div>
   <div class="col-10 m-auto ">
-    <div class="container formstyle">
+    <div class="container">
       <form [formGroup]="form" (ngSubmit)="submit()">
-        <div class="form-group">
-          <label for="LicenseNumber" translate>demo.text9</label>
-          <input [(ngModel)]="entry.LicenseNumber" type="text" class="form-control" formControlName="LicenseNumber">
-          <div *ngIf=" form.controls.LicenseNumber.touched && !form.controls.LicenseNumber.valid"
-           class="alert alert-danger" translate>
-            demo.validations.val1</div>
+        <div class="row">
+          <div class="col-6">
+            <div class="form-group">
+              <label for="LicenseNumber" translate>demo.text9</label>
+              <input [(ngModel)]="entry.LicenseNumber" type="text" class="form-control" formControlName="LicenseNumber">
+              <div *ngIf=" form.controls.LicenseNumber.touched && !form.controls.LicenseNumber.valid"
+                class="alert alert-danger" translate>
+                demo.validations.val1</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="TrailerNumber" translate>demo.text10</label>
+              <input [(ngModel)]="entry.TrailerNumber" type="text" class="form-control" formControlName="TrailerNumber">
+              <div *ngIf=" form.controls.TrailerNumber.touched && !form.controls.TrailerNumber.valid"
+                class="alert alert-danger" translate>
+                demo.validations.val2</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="Name" translate>demo.text11</label>
+              <input [(ngModel)]="entry.Name" type="text" class="form-control" formControlName="Name">
+              <div *ngIf=" form.controls.Name.touched && !form.controls.Name.valid" class="alert alert-danger"
+                translate>
+                demo.validations.val3</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="CompanyName" translate>demo.text12</label>
+              <input [(ngModel)]="entry.CompanyName" type="text" class="form-control" formControlName="CompanyName">
+              <div *ngIf=" form.controls.CompanyName.touched && !form.controls.CompanyName.valid"
+                class="alert alert-danger" translate>
+                demo.validations.val4</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="Destination" translate>demo.text13</label>
+              <input [(ngModel)]="entry.Destination" type="text" class="form-control" formControlName="TrailerNumber">
+              <div *ngIf=" form.controls.Destination.touched && !form.controls.Destination.valid"
+                class="alert alert-danger" translate>
+                demo.validations.val5</div>
+            </div>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="TrailerNumber" translate>demo.text10</label>
-          <input [(ngModel)]="entry.TrailerNumber" type="text" class="form-control" formControlName="TrailerNumber">
-          <div *ngIf=" form.controls.TrailerNumber.touched && !form.controls.TrailerNumber.valid" class="alert alert-danger" translate>
-            demo.validations.val2</div>
-        </div>
-        <div class="form-group">
-          <label for="Name" translate>demo.text11</label>
-          <input [(ngModel)]="entry.Name" type="text" class="form-control" formControlName="Name">
-          <div *ngIf=" form.controls.Name.touched && !form.controls.Name.valid" class="alert alert-danger" translate>
-            demo.validations.val3</div>
-        </div>
-        <div class="form-group">
-          <label for="CompanyName" translate>demo.text12</label>
-          <input [(ngModel)]="entry.CompanyName" type="text" class="form-control" formControlName="CompanyName">
-          <div *ngIf=" form.controls.CompanyName.touched && !form.controls.CompanyName.valid" class="alert alert-danger" translate>
-            demo.validations.val4</div>
-        </div>
-    
-        <div class="form-group">
-          <label for="Destination" translate>demo.text13</label>
-          <input [(ngModel)]="entry.Destination" type="text" class="form-control" formControlName="TrailerNumber">
-          <div *ngIf=" form.controls.Destination.touched && !form.controls.Destination.valid" class="alert alert-danger" translate>
-            demo.validations.val5</div>
-        </div>
-        <!-- <div class="form-group">
-            <label for="DateTime" translate>demo.text14</label>
-            <input [(ngModel)]="entry.DateTime" type="time" class="form-control" formControlName="DateTime">
-            <div *ngIf=" form.controls.DateTime.touched && !form.controls.DateTime.valid" class="alert alert-danger" translate>
-              demo.validations.val6</div>
-          </div> -->
-         
-        <!-- <button class="btn btn-primary unibutton" type="submit" translate>{{title}}</button> -->
+
         <button class="nav-btn m-auto subbutton" type="submit">
           <svg id="i-chevron-right" viewBox="0 0 32 32" width="60" height="100%" fill="none" stroke="currentcolor"
             stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
             <path d="M12 30 L24 16 12 2"></path>
           </svg>
         </button>
-      </form>      
+      </form>
     </div>
   </div>
-  
- 
 </div>

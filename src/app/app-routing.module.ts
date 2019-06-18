@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: 'exit/:id', component: ExitLogsComponent },
   { path: 'quiz', component: QuizComponent },
   { path: 'ngdrag', component: NgdragComponent },
-  { path: 'unidoc', component: UnidocComponent },
+  { path: 'about', component: UnidocComponent },
   { path: 'login', component: LoginComponent },
   { path: 'list', component: EntryExitListComponent }
 ];

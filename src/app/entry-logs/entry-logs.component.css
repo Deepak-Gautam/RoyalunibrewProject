@@ -41,12 +41,9 @@ input {
      background: #154f3e !important;
      text-decoration: none !important;
  }
- .formstyle{
-    width: 70%;
-}
 .subbutton{
     position: absolute;
-    top: 119px;
+    top: calc(50% - 50px);
     right: 70px;
 }
 input[type=time]::-webkit-inner-spin-button, 
@@ -55,4 +52,7 @@ input[type=time]::-webkit-outer-spin-button {
     -moz-appearance: none;
     appearance: none;
     margin: 0; 
+}
+form{
+    padding-right: 240px;
 }
