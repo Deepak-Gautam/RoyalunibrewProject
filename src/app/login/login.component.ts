@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { PasswordValidator } from '../passwordValidator';
 import { LoginService } from '../login.service';
-import { ActivatedRoute } from '@angular/router';
-import { getMaxListeners } from 'cluster';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -11,15 +10,15 @@ import { getMaxListeners } from 'cluster';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
- form: FormGroup;
- invalidLoginMessage;
-  constructor(fb: FormBuilder, private loginService: LoginService , private route: ActivatedRoute) {
+  form: FormGroup;
+  invalidLoginMessage;
+  constructor(fb: FormBuilder, private loginService: LoginService, private route: ActivatedRoute, private router: Router) {
     this.form = fb.group({
       username: ['', Validators.required],
       password: ['', Validators.compose([Validators.required,
       PasswordValidator.cannotContainSpace])]
     });
-   }
+  }
 
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -32,12 +31,11 @@ export class LoginComponent implements OnInit {
       this.form.controls.password.setErrors({
         invvalidLogin: true
       });
-
- }
+    }
   }
 
 }
 
 //  Hardcorded user
-//  id:dipakgautam120@gmail.com
-//  password: Password3885
+//  dipakgautam120@gmail.com
+//  Password3885
