@@ -30,7 +30,7 @@
     "compodoc": "0.0.41",
     "core-js": "^2.6.7",
     "firebase": "^6.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "ng2-dnd": "^5.0.2",
     "ngx-embed-video": "^1.0.4",
     "ngx-order-pipe": "^2.0.2",
